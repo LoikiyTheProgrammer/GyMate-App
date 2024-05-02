@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import styles from '../../constants/styleCRUD';
 import { SafeAreaView, View, Text, TextInput, Pressable, FlatList } from 'react-native';
 import { collection, doc, getDocs, updateDoc, deleteDoc } from 'firebase/firestore';
 import { db } from '../../components/confg';
-import styles from '../../constants/styleCRUD';
 
 export default function SignUp() {
   const [usuarios, setUsuarios] = useState([]);

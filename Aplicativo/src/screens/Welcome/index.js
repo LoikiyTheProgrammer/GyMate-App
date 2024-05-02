@@ -20,16 +20,16 @@ export default function Welcome() {
                 <Text style={styles.welcomeText}>BEM VINDO</Text>
             </View>
             <View style={styles.navScreens}>
-                <Pressable style={styles.navButton1} onPress={ () => navigation.navigate('GyMate Sign-in')}>
-                    <Text style={styles.navButton1Text}>ENTRAR</Text>
+                <Pressable style={styles.navButtonLogin} onPress={ () => navigation.navigate('GyMate Sign-in')}>
+                    <Text style={styles.navButtonLoginText}>LOGIN</Text>
                 </Pressable>
                 <br></br>
-                <Pressable style={styles.navButton2} onPress={ () => navigation.navigate('GyMate Sign-up')}>
-                    <Text style={styles.navButton2Text}>REGISTRAR-SE</Text>
+                <Pressable style={styles.navButtonSignUp} onPress={ () => navigation.navigate('GyMate Sign-up')}>
+                    <Text style={styles.navButtonSignUpText}>REGISTRAR-SE</Text>
                 </Pressable>
                 <br></br>
                 <Pressable style={styles.navButtonCRUD} onPress={ () => navigation.navigate('GyMate CRUD')}>
-                    <Text style={styles.navButton1Text}>TELA DO CRUD</Text>
+                    <Text style={styles.navButtonCRUDText}>TELA DO CRUD</Text>
                 </Pressable>
             </View>
         </SafeAreaView>

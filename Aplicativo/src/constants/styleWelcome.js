@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  navButton1: {
+  navButtonLogin: {
     width: '80%',
     height: '20%',
     borderRadius: 25,
@@ -66,12 +66,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#162b9e',
   },
-  navButton1Text: {
+  navButtonLoginText: {
     color: '#fff',
     fontSize: 25,
     fontWeight: 'bold',
   },
-  navButton2: {
+  navButtonSignUp: {
     width: '80%',
     height: '20%',
     borderRadius: 25,
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#fff',
   },
-  navButton2Text: {
+  navButtonSignUpText: {
     color: '#162b9e',
     fontSize: 25,
     fontWeight: 'bold',
@@ -91,6 +91,11 @@ const styles = StyleSheet.create({
     height: 'auto',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  navButtonCRUDText: {
+    color: '#fff',
+    fontSize: 25,
+    fontWeight: 'bold',
   },
 });
 

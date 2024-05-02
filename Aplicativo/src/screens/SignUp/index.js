@@ -1,25 +1,25 @@
-import React from 'react'
-import styles from '../../constants/styleSignUp'
-import { SafeAreaView, View, Text, TextInput, Pressable, Image } from 'react-native'
-import { useState } from 'react/cjs/react.development'
-import { collection, addDoc } from 'firebase/firestore'
-import { db } from '../../components/confg'
-import { useNavigation } from '@react-navigation/native'
+import React from 'react';
+import styles from '../../constants/styleSignUp';
+import { SafeAreaView, View, Text, TextInput, Pressable, Image } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { useState } from 'react/cjs/react.development';
+import { collection, addDoc } from 'firebase/firestore';
+import { db } from '../../components/confg';
 
 export default function SignUp() {
-  const navigation = useNavigation()
+  const navigation = useNavigation();
 
-  const [NomeC, setNomeC] = useState('');
-  const [EmailC, setEmailC] = useState('');
-  const [SenhaC, setSenhaC] = useState('');
+  const [nomeCreate, setNomeCreate] = useState('');
+  const [emailCreate, setEmailCreate] = useState('');
+  const [senhaCreate, setSenhaCreate] = useState('');
 
   // create
   function crudCreate() {
-    if (NomeC && EmailC && SenhaC) {
+    if (nomeCreate && emailCreate && senhaCreate) {
       addDoc(collection(db, 'Usuarios'), {
-        Nome_usu: NomeC,
-        Email_usu: EmailC,
-        Senha_usu: SenhaC,
+        Nome_usu: nomeCreate,
+        Email_usu: emailCreate,
+        Senha_usu: senhaCreate,
       }).then(() => {
         console.log('Dados enviados!');
       }).catch((error) => {
@@ -38,30 +38,30 @@ export default function SignUp() {
       </View>
 
       <View style={styles.signUp}>
-        <TextInput style={styles.input} value={NomeC} onChangeText={(NomeC) => {setNomeC(NomeC)}} placeholder='Digite seu nome de usuário'/>
+        <TextInput style={styles.input} value={nomeCreate} onChangeText={(nomeCreate) => {setNomeCreate(nomeCreate)}} placeholder='Digite seu nome de usuário'/>
         <br></br>
-        <TextInput style={styles.input} value={EmailC} onChangeText={(EmailC) => {setEmailC(EmailC)}} placeholder='Digite seu e-mail' keyboardType='email-address'/>
+        <TextInput style={styles.input} value={emailCreate} onChangeText={(emailCreate) => {setEmailCreate(emailCreate)}} placeholder='Digite seu e-mail' keyboardType='email-address'/>
         <br></br>
-        <TextInput style={styles.input} value={SenhaC} onChangeText={(SenhaC) => {setSenhaC(SenhaC)}}placeholder='Digite sua senha' secureTextEntry={true}/>
+        <TextInput style={styles.input} value={senhaCreate} onChangeText={(senhaCreate) => {setSenhaCreate(senhaCreate)}} placeholder='Digite sua senha' secureTextEntry={true}/>
         <br></br>
-        <Pressable style={styles.button1}>
+        <Pressable style={styles.buttonCreateAccount}>
           <Image style={styles.buttonBackgroundImage} source={require('../../assets/Fundo-GyMate-90º.png')}/>
-          <Text style={styles.buttonText} onClick={crudCreate}>CRIAR CONTA</Text>
+          <Text style={styles.buttonCreateAccountText} onClick={crudCreate}>CRIAR CONTA</Text>
         </Pressable>
         <br></br>
-        <Pressable style={styles.button2}>
-          <Text style={styles.buttonText} onPress={ () => navigation.navigate('GyMate')}>VOLTAR</Text>
+        <Pressable style={styles.buttonBack} onPress={ () => navigation.navigate('GyMate')}>
+          <Text style={styles.buttonBackText}>VOLTAR</Text>
         </Pressable>
       </View>
 
       <View style={styles.changeAccess}>
-        <Text style={styles.accessText}>Já possui uma conta?</Text>
-        <Pressable style={styles.navButton} onPress={ () => navigation.navigate('GyMate Sign-in')}>
-          <Text style={styles.buttonText}>CLIQUE AQUI</Text>
+        <Text style={styles.changeAccessText}>Já possui uma conta?</Text>
+        <Pressable style={styles.navButtonSignIn} onPress={ () => navigation.navigate('GyMate Sign-in')}>
+          <Text style={styles.buttonSignInText}>CLIQUE AQUI</Text>
         </Pressable>
       </View>
 
       <View style={styles.footer}/>
     </SafeAreaView>
-  )
+  );
 }

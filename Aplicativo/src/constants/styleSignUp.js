@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native'
-import { width, height} from './dimensions'
+import { StyleSheet } from 'react-native';
+import { width, height} from './dimensions';
 
 const styles = StyleSheet.create({
   container: {
@@ -38,12 +38,12 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderBlockColor: '#000',
     color: '#162b9e',
-    fontSize: '125%',
+    fontSize: 20,
     fontWeight: 'bold',
     paddingLeft: '2%',
     backgroundColor: '#fff',
   },
-  button1: {
+  buttonCreateAccount: {
     width: '80%',
     height: '15%',
     borderRadius: 25,
@@ -53,7 +53,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#162b9e',
   },
-  button2: {
+  buttonCreateAccountText: {
+    color: '#fff',
+    fontSize: 25,
+    fontWeight: 'bold',
+  },
+  buttonBack: {
     width: '40%',
     height: '15%',
     borderRadius: 25,
@@ -63,16 +68,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#162b9e',
   },
+  buttonBackText: {
+    color: '#fff',
+    fontSize: 25,
+    fontWeight: 'bold',
+  },
   buttonBackgroundImage: {
     position: 'absolute',
     width: '100%',
     height: '100%',
     borderRadius: 25,
-  },
-  buttonText: {
-    color: '#fff',
-    fontSize: 25,
-    fontWeight: 'bold',
   },
   changeAccess: {
     width: '100%',
@@ -80,15 +85,20 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  accessText: {
+  changeAccessText: {
     color: '#fff',
     fontSize: 25,
   },
-  navButton: {
+  navButtonSignIn: {
     width: 'auto',
     height: 'auto',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  buttonSignInText: {
+    color: '#fff',
+    fontSize: 25,
+    fontWeight: 'bold',
   },
   footer: {
     width: '100%',
