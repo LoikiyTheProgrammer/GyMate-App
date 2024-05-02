@@ -1,8 +1,8 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Welcome from '../screens/Welcome';
-import SignUp from '../screens/SignUp';
-import SignIn from '../screens/SignIn';
-import CRUD from '../screens/CRUD';
+import Home from '../screens/beforeLogin/Home';
+import SignUp from '../screens/beforeLogin/SignUp';
+import SignIn from '../screens/beforeLogin/SignIn';
+import CRUD from '../screens/beforeLogin/CRUD';
 
 const Stack = createNativeStackNavigator();
 
@@ -11,7 +11,7 @@ export default function Routes() {
     <Stack.Navigator>
       <Stack.Screen
         name='GyMate'
-        component={Welcome}
+        component={Home}
         options={{ headerShown: false}}
       />
 

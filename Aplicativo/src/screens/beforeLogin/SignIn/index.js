@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from '../../constants/styleSignIn';
+import React, { useState } from 'react';
+import styles from '../../../constants/beforeLogin/styleSignIn';
 import { SafeAreaView, View, Text, TextInput, Pressable, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
@@ -14,16 +14,23 @@ export default function SignIn() {
             </View>
 
             <View style={styles.signIn}>
-                <TextInput style={styles.input} placeholder='Digite seu e-mail' keyboardType='email-address'/>
+                <TextInput
+                    style={styles.input}
+                    placeholder='Digite seu e-mail'
+                    keyboardType='email-address'
+                />
                 <br></br>
-                <TextInput style={styles.input} placeholder='Digite sua senha' secureTextEntry={true}/>
-
+                <TextInput
+                    style={styles.input}
+                    placeholder='Digite sua senha'
+                    secureTextEntry={true}
+                />
                 <Pressable style={styles.forgotButton}>
                     <Text style={styles.forgotButtonText}>Esqueci minha senha</Text>
                 </Pressable>
                 <br></br>
                 <Pressable style={styles.buttonSignIn}>
-                    <Image style={styles.buttonBackgroundImage} source={require('../../assets/Fundo-GyMate-90º.png')}/>
+                    <Image style={styles.buttonBackgroundImage} source={require('../../../assets/Fundo-GyMate-90º.png')}/>
                     <Text style={styles.buttonSignInText}>ENTRAR</Text>
                 </Pressable>
                 <br></br>

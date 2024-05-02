@@ -1,12 +1,12 @@
 import { StyleSheet } from 'react-native';
-import { width, height} from './dimensions';
+import { width, height} from '../dimensions';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#162b9e',
   },
   header: {
     width: '100%',
@@ -16,16 +16,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   headerText: {
-    color: '#162b9e',
+    color: '#fff',
     fontSize: 80,
     textAlign: 'center',
   },
   subHeaderText: {
-    color: '#162b9e',
+    color: '#fff',
     fontSize: 20,
     textAlign: 'center',
   },
-  signIn: {
+  signUp: {
     width: '100%',
     height: '50%',
     alignItems: 'center',
@@ -43,25 +43,17 @@ const styles = StyleSheet.create({
     paddingLeft: '2%',
     backgroundColor: '#fff',
   },
-  forgotButton: {
-    width: '80%',
-    height: 'auto',
-  },
-  forgotButtonText: {
-    color: '#162b9e',
-    fontSize: 20,
-  },
-  buttonSignIn: {
+  buttonCreateAccount: {
     width: '80%',
     height: '15%',
     borderRadius: 25,
     borderWidth: 2,
-    borderColor: '#162b9e',
+    borderColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#162b9e',
   },
-  buttonSignInText: {
+  buttonCreateAccountText: {
     color: '#fff',
     fontSize: 25,
     fontWeight: 'bold',
@@ -71,7 +63,7 @@ const styles = StyleSheet.create({
     height: '15%',
     borderRadius: 25,
     borderWidth: 2,
-    borderColor: '#162b9e',
+    borderColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#162b9e',
@@ -87,11 +79,6 @@ const styles = StyleSheet.create({
     height: '100%',
     borderRadius: 25,
   },
-  buttonText: {
-    color: '#fff',
-    fontSize: 25,
-    fontWeight: 'bold',
-  },
   changeAccess: {
     width: '100%',
     height: '15%',
@@ -99,17 +86,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   changeAccessText: {
-    color: '#162b9e',
+    color: '#fff',
     fontSize: 25,
   },
-  navButtonSignUp: {
+  navButtonSignIn: {
     width: 'auto',
     height: 'auto',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  navButtonSignUpText: {
-    color: '#162b9e',
+  buttonSignInText: {
+    color: '#fff',
     fontSize: 25,
     fontWeight: 'bold',
   },
@@ -119,7 +106,7 @@ const styles = StyleSheet.create({
     position: 'relative',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#162b9e',
+    backgroundColor: '#fff',
   },
 });
 

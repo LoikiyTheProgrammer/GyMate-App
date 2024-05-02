@@ -1,14 +1,14 @@
 import React from 'react'
-import styles from '../../constants/styleWelcome'
+import styles from '../../../constants/beforeLogin/styleWelcome'
 import { SafeAreaView, View, Text, Pressable, Image } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
-export default function Welcome() {
-    const navigation = useNavigation()
+export default function Home() {
+    const navigation = useNavigation();
 
     return (
         <SafeAreaView style={styles.container}>
-            <Image style={styles.BackgroundImage} source={require('../../assets/Fundo-GyMate.png')}/>
+            <Image style={styles.BackgroundImage} source={require('../../../assets/Fundo-GyMate.png')}/>
             <View style={styles.header}>
                 <View style={styles.headerBox}>
                     <Text style={styles.headerText}>GyMate</Text>

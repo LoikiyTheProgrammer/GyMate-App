@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from '../../constants/styleSignUp';
+import styles from '../../../constants/beforeLogin/styleSignUp';
 import { SafeAreaView, View, Text, TextInput, Pressable, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { useState } from 'react/cjs/react.development';
 import { collection, addDoc } from 'firebase/firestore';
-import { db } from '../../components/confg';
+import { firebaseBD } from '../../../components/confg';
 
 export default function SignUp() {
   const navigation = useNavigation();
@@ -13,10 +13,10 @@ export default function SignUp() {
   const [emailCreate, setEmailCreate] = useState('');
   const [senhaCreate, setSenhaCreate] = useState('');
 
-  // create
-  function crudCreate() {
+  // Create
+  function handleCreate() {
     if (nomeCreate && emailCreate && senhaCreate) {
-      addDoc(collection(db, 'Usuarios'), {
+      addDoc(collection(firebaseBD, 'Usuarios'), {
         Nome_usu: nomeCreate,
         Email_usu: emailCreate,
         Senha_usu: senhaCreate,
@@ -38,15 +38,32 @@ export default function SignUp() {
       </View>
 
       <View style={styles.signUp}>
-        <TextInput style={styles.input} value={nomeCreate} onChangeText={(nomeCreate) => {setNomeCreate(nomeCreate)}} placeholder='Digite seu nome de usuário'/>
+        <TextInput
+          style={styles.input}
+          value={nomeCreate}
+          onChangeText={(nomeCreate) => {setNomeCreate(nomeCreate)}}
+          placeholder='Digite seu nome de usuário'
+        />
         <br></br>
-        <TextInput style={styles.input} value={emailCreate} onChangeText={(emailCreate) => {setEmailCreate(emailCreate)}} placeholder='Digite seu e-mail' keyboardType='email-address'/>
+        <TextInput
+          style={styles.input}
+          value={emailCreate}
+          onChangeText={(emailCreate) => {setEmailCreate(emailCreate)}}
+          placeholder='Digite seu e-mail'
+          keyboardType='email-address'
+        />
         <br></br>
-        <TextInput style={styles.input} value={senhaCreate} onChangeText={(senhaCreate) => {setSenhaCreate(senhaCreate)}} placeholder='Digite sua senha' secureTextEntry={true}/>
+        <TextInput
+          style={styles.input}
+          value={senhaCreate}
+          onChangeText={(senhaCreate) => {setSenhaCreate(senhaCreate)}}
+          placeholder='Digite sua senha'
+          secureTextEntry={true}
+        />
         <br></br>
         <Pressable style={styles.buttonCreateAccount}>
-          <Image style={styles.buttonBackgroundImage} source={require('../../assets/Fundo-GyMate-90º.png')}/>
-          <Text style={styles.buttonCreateAccountText} onClick={crudCreate}>CRIAR CONTA</Text>
+          <Image style={styles.buttonBackgroundImage} source={require('../../../assets/Fundo-GyMate-90º.png')}/>
+          <Text style={styles.buttonCreateAccountText} onClick={handleCreate}>CRIAR CONTA</Text>
         </Pressable>
         <br></br>
         <Pressable style={styles.buttonBack} onPress={ () => navigation.navigate('GyMate')}>

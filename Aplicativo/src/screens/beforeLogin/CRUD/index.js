@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import styles from '../../constants/styleCRUD';
+import styles from '../../../constants/beforeLogin/styleCRUD';
 import { SafeAreaView, View, Text, TextInput, Pressable, FlatList } from 'react-native';
 import { collection, doc, getDocs, updateDoc, deleteDoc } from 'firebase/firestore';
-import { db } from '../../components/confg';
+import { firebaseBD } from '../../../components/confg';
 
 export default function SignUp() {
   const [usuarios, setUsuarios] = useState([]);
@@ -16,7 +16,7 @@ export default function SignUp() {
   }, []);
 
   const fetchUsuarios = async () => {
-    const usuariosSnapshot = await getDocs(collection(db, 'Usuarios'));
+    const usuariosSnapshot = await getDocs(collection(firebaseBD, 'Usuarios'));
     const usuariosData = usuariosSnapshot.docs.map(doc => ({ ...doc.data(), id: doc.id }));
     setUsuarios(usuariosData);
   };
@@ -30,7 +30,7 @@ export default function SignUp() {
   };
 
   const handleSaveUpdate = async () => {
-    await updateDoc(doc(db, 'Usuarios', editingUserId), {
+    await updateDoc(doc(firebaseBD, 'Usuarios', editingUserId), {
       Nome_usu: nomeEdit,
       Email_usu: emailEdit,
       Senha_usu: senhaEdit,
@@ -43,7 +43,7 @@ export default function SignUp() {
   };
 
   const handleDelete = async (userId) => {
-    await deleteDoc(doc(db, 'Usuarios', userId));
+    await deleteDoc(doc(firebaseBD, 'Usuarios', userId));
     fetchUsuarios();
   };
 
