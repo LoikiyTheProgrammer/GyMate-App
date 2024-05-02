@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../../constants/beforeLogin/styleWelcome'
+import styles from '../../../constants/beforeLogin/styleHome'
 import { SafeAreaView, View, Text, Pressable, Image } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
