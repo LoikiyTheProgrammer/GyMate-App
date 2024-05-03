@@ -33,5 +33,5 @@ export default function Home() {
                 </Pressable>
             </View>
         </SafeAreaView>
-    )
+    );
 }
