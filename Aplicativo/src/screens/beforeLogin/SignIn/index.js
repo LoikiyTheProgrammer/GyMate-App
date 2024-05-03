@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from '../../../constants/beforeLogin/styleSignIn';
 import { SafeAreaView, View, Text, TextInput, Pressable, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
@@ -29,7 +29,7 @@ export default function SignIn() {
                     <Text style={styles.forgotButtonText}>Esqueci minha senha</Text>
                 </Pressable>
                 <br></br>
-                <Pressable style={styles.buttonSignIn}>
+                <Pressable style={styles.buttonSignIn} onPress={ () => navigation.navigate('GyMate Initial-Screen')}>
                     <Image style={styles.buttonBackgroundImage} source={require('../../../assets/Fundo-GyMate-90º.png')}/>
                     <Text style={styles.buttonSignInText}>ENTRAR</Text>
                 </Pressable>
