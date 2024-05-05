@@ -2,6 +2,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../screens/beforeLogin/Home';
 import SignUp from '../screens/beforeLogin/SignUp';
 import SignIn from '../screens/beforeLogin/SignIn';
+import AuthScreen from '../screens/beforeLogin/Auth';
 import CRUD from '../screens/beforeLogin/CRUD';
 import InitialScreen from '../screens/afterLogin/InitialScreen';
 
@@ -25,6 +26,12 @@ export default function Routes() {
       <Stack.Screen
         name='GyMate Sign-up'
         component={SignUp}
+        options={{ headerShown: false}}
+      />
+
+      <Stack.Screen
+        name='GyMate Auth'
+        component={AuthScreen}
         options={{ headerShown: false}}
       />
 

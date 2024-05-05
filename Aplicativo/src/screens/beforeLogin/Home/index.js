@@ -28,6 +28,10 @@ export default function Home() {
                     <Text style={styles.navButtonSignUpText}>REGISTRAR-SE</Text>
                 </Pressable>
                 <br></br>
+                <Pressable style={styles.navButtonSignUp} onPress={ () => navigation.navigate('GyMate Auth')}>
+                    <Text style={styles.navButtonSignUpText}>SING-IN/UP</Text>
+                </Pressable>
+                <br></br>
                 <Pressable style={styles.navButtonCRUD} onPress={ () => navigation.navigate('GyMate CRUD')}>
                     <Text style={styles.navButtonCRUDText}>TELA DO CRUD</Text>
                 </Pressable>
