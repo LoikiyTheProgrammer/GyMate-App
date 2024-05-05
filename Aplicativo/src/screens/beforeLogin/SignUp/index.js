@@ -7,11 +7,11 @@ import { collection, addDoc } from 'firebase/firestore';
 import { firebaseBD } from '../../../components/confg';
 
 export default function SignUp() {
-  const navigation = useNavigation();
+  const navigation = useNavigation()
 
-  const [nomeCreate, setNomeCreate] = useState('');
-  const [emailCreate, setEmailCreate] = useState('');
-  const [senhaCreate, setSenhaCreate] = useState('');
+  const [nomeCreate, setNomeCreate] = useState('')
+  const [emailCreate, setEmailCreate] = useState('')
+  const [senhaCreate, setSenhaCreate] = useState('')
 
   // Create
   function handleCreate() {
@@ -21,12 +21,12 @@ export default function SignUp() {
         Email_usu: emailCreate,
         Senha_usu: senhaCreate,
       }).then(() => {
-        console.log('Dados enviados!');
+        console.log('Dados enviados!')
       }).catch((error) => {
-        console.log(error);
-      });
+        console.log(error)
+      })
     } else {
-      console.log('Por favor, preencha todos os campos.');
+      console.log('Por favor, preencha todos os campos.')
     }
   }
 
@@ -80,5 +80,5 @@ export default function SignUp() {
 
       <View style={styles.footer}/>
     </SafeAreaView>
-  );
+  )
 }

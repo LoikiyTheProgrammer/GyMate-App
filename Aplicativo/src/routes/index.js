@@ -5,7 +5,7 @@ import SignIn from '../screens/beforeLogin/SignIn';
 import CRUD from '../screens/beforeLogin/CRUD';
 import InitialScreen from '../screens/afterLogin/InitialScreen';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator()
 
 export default function Routes() {
   return (
@@ -40,5 +40,5 @@ export default function Routes() {
         options={{ headerShown: false}}
       />
     </Stack.Navigator>
-  );
+  )
 }

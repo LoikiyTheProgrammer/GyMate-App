@@ -1,10 +1,10 @@
-import React from 'react'
-import styles from '../../../constants/beforeLogin/styleHome'
-import { SafeAreaView, View, Text, Pressable, Image } from 'react-native'
-import { useNavigation } from '@react-navigation/native'
+import React from 'react';
+import styles from '../../../constants/beforeLogin/styleHome';
+import { SafeAreaView, View, Text, Pressable, Image } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Home() {
-    const navigation = useNavigation();
+    const navigation = useNavigation()
 
     return (
         <SafeAreaView style={styles.container}>
@@ -33,5 +33,5 @@ export default function Home() {
                 </Pressable>
             </View>
         </SafeAreaView>
-    );
+    )
 }

@@ -5,47 +5,47 @@ import { collection, doc, getDocs, updateDoc, deleteDoc } from 'firebase/firesto
 import { firebaseBD } from '../../../components/confg';
 
 export default function SignUp() {
-  const [usuarios, setUsuarios] = useState([]);
-  const [editingUserId, setEditingUserId] = useState(null);
-  const [nomeEdit, setNomeEdit] = useState('');
-  const [emailEdit, setEmailEdit] = useState('');
-  const [senhaEdit, setSenhaEdit] = useState('');
+  const [usuarios, setUsuarios] = useState([])
+  const [editingUserId, setEditingUserId] = useState(null)
+  const [nomeEdit, setNomeEdit] = useState('')
+  const [emailEdit, setEmailEdit] = useState('')
+  const [senhaEdit, setSenhaEdit] = useState('')
 
   useEffect(() => {
-    fetchUsuarios();
-  }, []);
+    fetchUsuarios()
+  }, [])
 
   const fetchUsuarios = async () => {
-    const usuariosSnapshot = await getDocs(collection(firebaseBD, 'Usuarios'));
-    const usuariosData = usuariosSnapshot.docs.map(doc => ({ ...doc.data(), id: doc.id }));
-    setUsuarios(usuariosData);
-  };
+    const usuariosSnapshot = await getDocs(collection(firebaseBD, 'Usuarios'))
+    const usuariosData = usuariosSnapshot.docs.map(doc => ({ ...doc.data(), id: doc.id }))
+    setUsuarios(usuariosData)
+  }
 
   const handleUpdate = async (userId) => {
-    setEditingUserId(userId);
-    const userToUpdate = usuarios.find(user => user.id === userId);
-    setNomeEdit(userToUpdate.Nome_usu);
-    setEmailEdit(userToUpdate.Email_usu);
-    setSenhaEdit(userToUpdate.Senha_usu);
-  };
+    setEditingUserId(userId)
+    const userToUpdate = usuarios.find(user => user.id === userId)
+    setNomeEdit(userToUpdate.Nome_usu)
+    setEmailEdit(userToUpdate.Email_usu)
+    setSenhaEdit(userToUpdate.Senha_usu)
+  }
 
   const handleSaveUpdate = async () => {
     await updateDoc(doc(firebaseBD, 'Usuarios', editingUserId), {
       Nome_usu: nomeEdit,
       Email_usu: emailEdit,
       Senha_usu: senhaEdit,
-    });
-    setEditingUserId(null);
-    setNomeEdit('');
-    setEmailEdit('');
-    setSenhaEdit('');
-    fetchUsuarios();
-  };
+    })
+    setEditingUserId(null)
+    setNomeEdit('')
+    setEmailEdit('')
+    setSenhaEdit('')
+    fetchUsuarios()
+  }
 
   const handleDelete = async (userId) => {
-    await deleteDoc(doc(firebaseBD, 'Usuarios', userId));
-    fetchUsuarios();
-  };
+    await deleteDoc(doc(firebaseBD, 'Usuarios', userId))
+    fetchUsuarios()
+  }
 
   const renderItem = ({ item }) => (
     <View style={styles.userContainer}>
@@ -91,7 +91,7 @@ export default function SignUp() {
         </View>
       )}
     </View>
-  );
+  )
 
   return (
     <SafeAreaView style={styles.container}>
@@ -103,5 +103,5 @@ export default function SignUp() {
         keyExtractor={item => item.id}
       />
     </SafeAreaView>
-  );
+  )
 }

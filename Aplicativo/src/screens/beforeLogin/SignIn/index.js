@@ -4,7 +4,7 @@ import { SafeAreaView, View, Text, TextInput, Pressable, Image } from 'react-nat
 import { useNavigation } from '@react-navigation/native';
 
 export default function SignIn() {
-    const navigation = useNavigation();
+    const navigation = useNavigation()
 
     return (
         <SafeAreaView style={styles.container}>
@@ -48,5 +48,5 @@ export default function SignIn() {
 
             <View style={styles.footer}/>
         </SafeAreaView>
-    );
+    )
 }

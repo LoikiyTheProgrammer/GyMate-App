@@ -9,5 +9,5 @@ export default function InitialScreen() {
                 <Text style={styles.headerText}>Hello</Text>
             </View>
         </SafeAreaView>
-    );
+    )
 }
