@@ -1,12 +1,12 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from '../screens/beforeLogin/Home';
-import SignUp from '../screens/beforeLogin/SignUp';
-import SignIn from '../screens/beforeLogin/SignIn';
-import AuthScreen from '../screens/beforeLogin/Auth';
-import CRUD from '../screens/beforeLogin/CRUD';
-import InitialScreen from '../screens/afterLogin/InitialScreen';
+import Home from '../screens/beforeLogin/Home/home';
+import SignUp from '../screens/beforeLogin/SignUp/signUp';
+import SignIn from '../screens/beforeLogin/SignIn/signIn';
+import AuthScreen from '../screens/beforeLogin/Auth/auth';
+import CRUD from '../screens/beforeLogin/CRUD/crud';
+import InitialScreen from '../screens/afterLogin/InitialScreen/initialScreen';
 
-const Stack = createNativeStackNavigator()
+const Stack = createNativeStackNavigator();
 
 export default function Routes() {
   return (
@@ -47,5 +47,5 @@ export default function Routes() {
         options={{ headerShown: false}}
       />
     </Stack.Navigator>
-  )
+  );
 }

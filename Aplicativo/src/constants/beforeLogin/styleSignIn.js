@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#fff',
   },
+
   header: {
     width: '100%',
     height: '30%',
@@ -25,6 +26,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
   },
+
   signIn: {
     width: '100%',
     height: '50%',
@@ -34,6 +36,7 @@ const styles = StyleSheet.create({
   input: {
     width: '80%',
     height: '15%',
+    margin: '1%',
     borderRadius: 25,
     borderWidth: 2,
     borderBlockColor: '#000',
@@ -43,17 +46,21 @@ const styles = StyleSheet.create({
     paddingLeft: '2%',
     backgroundColor: '#fff',
   },
+
   forgotButton: {
     width: '80%',
     height: 'auto',
+    margin: '1%',
   },
   forgotButtonText: {
     color: '#162b9e',
     fontSize: 20,
   },
+
   buttonSignIn: {
     width: '80%',
     height: '15%',
+    margin: '1%',
     borderRadius: 25,
     borderWidth: 2,
     borderColor: '#162b9e',
@@ -66,9 +73,11 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
   },
+
   buttonBack: {
     width: '40%',
     height: '15%',
+    margin: '1%',
     borderRadius: 25,
     borderWidth: 2,
     borderColor: '#162b9e',
@@ -87,11 +96,7 @@ const styles = StyleSheet.create({
     height: '100%',
     borderRadius: 25,
   },
-  buttonText: {
-    color: '#fff',
-    fontSize: 25,
-    fontWeight: 'bold',
-  },
+
   changeAccess: {
     width: '100%',
     height: '15%',
@@ -102,6 +107,7 @@ const styles = StyleSheet.create({
     color: '#162b9e',
     fontSize: 25,
   },
+
   navButtonSignUp: {
     width: 'auto',
     height: 'auto',
@@ -113,6 +119,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
   },
+  
   footer: {
     width: '100%',
     height: '5%',

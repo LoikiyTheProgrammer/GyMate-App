@@ -1,10 +1,26 @@
-import React from 'react';
-import styles from '../../../constants/beforeLogin/styleSignIn';
+import React, { useState } from 'react';
 import { SafeAreaView, View, Text, TextInput, Pressable, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import styles from '../../../constants/beforeLogin/styleSignIn';
+import { getAuth, signInWithEmailAndPassword } from '@firebase/auth';
+import { app } from '../../../components/confg';
 
 export default function SignIn() {
-    const navigation = useNavigation()
+    const navigation = useNavigation();
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleSignIn = async () => {
+        const auth = getAuth(app);
+        try {
+            await signInWithEmailAndPassword(auth, email, password);
+            console.log('User signed in successfully!');
+            navigation.navigate('GyMate Initial-Screen');
+        } catch (error) {
+            console.error('Authentication error:', error.message);
+        }
+    };
 
     return (
         <SafeAreaView style={styles.container}>
@@ -16,37 +32,38 @@ export default function SignIn() {
             <View style={styles.signIn}>
                 <TextInput
                     style={styles.input}
+                    value={email}
+                    onChangeText={setEmail}
                     placeholder='Digite seu e-mail'
                     keyboardType='email-address'
                 />
-                <br></br>
                 <TextInput
                     style={styles.input}
+                    value={password}
+                    onChangeText={setPassword}
                     placeholder='Digite sua senha'
                     secureTextEntry={true}
                 />
                 <Pressable style={styles.forgotButton}>
                     <Text style={styles.forgotButtonText}>Esqueci minha senha</Text>
                 </Pressable>
-                <br></br>
-                <Pressable style={styles.buttonSignIn} onPress={ () => navigation.navigate('GyMate Initial-Screen')}>
-                    <Image style={styles.buttonBackgroundImage} source={require('../../../assets/Fundo-GyMate-90º.png')}/>
+                <Pressable style={styles.buttonSignIn} onPress={handleSignIn}>
+                    <Image style={styles.buttonBackgroundImage} source={require('../../../assets/Fundo-GyMate-90º.png')} />
                     <Text style={styles.buttonSignInText}>ENTRAR</Text>
                 </Pressable>
-                <br></br>
-                <Pressable style={styles.buttonBack} onPress={ () => navigation.navigate('GyMate')}>
+                <Pressable style={styles.buttonBack} onPress={() => navigation.navigate('GyMate')}>
                     <Text style={styles.buttonBackText}>VOLTAR</Text>
                 </Pressable>
             </View>
 
             <View style={styles.changeAccess}>
                 <Text style={styles.changeAccessText}>Ainda não possui uma conta?</Text>
-                <Pressable style={styles.navButtonSignUp} onPress={ () => navigation.navigate('GyMate Sign-up')}>
+                <Pressable style={styles.navButtonSignUp} onPress={() => navigation.navigate('GyMate Sign-up')}>
                     <Text style={styles.navButtonSignUpText}>CLIQUE AQUI</Text>
                 </Pressable>
             </View>
 
-            <View style={styles.footer}/>
+            <View style={styles.footer} />
         </SafeAreaView>
-    )
+    );
 }
