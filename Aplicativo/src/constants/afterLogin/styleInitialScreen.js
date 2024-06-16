@@ -73,15 +73,15 @@ const styles = StyleSheet.create({
         width: 50,
         height: 50,
         borderWidth: 2,
-        borderRadius: 5,
+        borderRadius: '100%',
         borderColor: '#1179e2',
         alignItems: 'center',
         justifyContent: 'center',
     },
     navButtonBotImage: {
-        width: '100%',
-        height: '100%',
-        borderRadius: 5,
+        width: '90%',
+        height: '90%',
+        borderRadius: '100%',
     },
 
     rotineListBox: {

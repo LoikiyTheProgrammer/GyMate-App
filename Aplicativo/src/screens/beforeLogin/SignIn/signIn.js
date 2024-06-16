@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SafeAreaView, View, Text, TextInput, Pressable, Image } from 'react-native';
+import { SafeAreaView, View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import styles from '../../../constants/beforeLogin/styleSignIn';
 import { getAuth, signInWithEmailAndPassword } from '@firebase/auth';
@@ -45,25 +45,25 @@ export default function SignIn() {
                     secureTextEntry={true}
                 />
 
-                <Pressable style={styles.buttonForgot}>
+                <TouchableOpacity style={styles.buttonForgot}>
                     <Text style={styles.buttonForgotText}>Esqueci minha senha</Text>
-                </Pressable>
+                </TouchableOpacity>
 
-                <Pressable style={styles.buttonSignIn} onPress={handleSignIn}>
+                <TouchableOpacity style={styles.buttonSignIn} onPress={handleSignIn}>
                     <Image style={styles.buttonImage} source={require('../../../assets/Fundo-GyMate-90º.png')} />
                     <Text style={styles.buttonSignInText}>ENTRAR</Text>
-                </Pressable>
+                </TouchableOpacity>
 
-                <Pressable style={styles.buttonBack} onPress={() => navigation.navigate('GyMate')}>
+                <TouchableOpacity style={styles.buttonBack} onPress={() => navigation.navigate('GyMate')}>
                     <Text style={styles.buttonBackText}>VOLTAR</Text>
-                </Pressable>
+                </TouchableOpacity>
             </View>
 
             <View style={styles.nav}>
                 <Text style={styles.navText}>Ainda não possui uma conta?</Text>
-                <Pressable style={styles.navButtonSignUp} onPress={() => navigation.navigate('GyMate Sign-up')}>
+                <TouchableOpacity style={styles.navButtonSignUp} onPress={() => navigation.navigate('GyMate Sign-up')}>
                     <Text style={styles.navButtonSignUpText}>CLIQUE AQUI</Text>
-                </Pressable>
+                </TouchableOpacity>
             </View>
 
             <View style={styles.footer}/>

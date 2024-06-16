@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SafeAreaView, View, Text, TextInput, Pressable, Image } from 'react-native';
+import { SafeAreaView, View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import styles from '../../../constants/beforeLogin/styleSignUp';
 import { getAuth, createUserWithEmailAndPassword } from '@firebase/auth';
@@ -45,21 +45,21 @@ export default function SignUp() {
           secureTextEntry={true}
         />
 
-        <Pressable style={styles.buttonSignUp} onPress={handleSignUp}>
+        <TouchableOpacity style={styles.buttonSignUp} onPress={handleSignUp}>
           <Image style={styles.buttonImage} source={require('../../../assets/Fundo-GyMate-90º.png')} />
           <Text style={styles.buttonSignUpText}>CRIAR CONTA</Text>
-        </Pressable>
+        </TouchableOpacity>
 
-        <Pressable style={styles.buttonBack} onPress={() => navigation.navigate('GyMate')}>
+        <TouchableOpacity style={styles.buttonBack} onPress={() => navigation.navigate('GyMate')}>
           <Text style={styles.buttonBackText}>VOLTAR</Text>
-        </Pressable>
+        </TouchableOpacity>
       </View>
 
       <View style={styles.nav}>
         <Text style={styles.navText}>Já possui uma conta?</Text>
-        <Pressable style={styles.navButtonSignIn} onPress={() => navigation.navigate('GyMate Sign-in')}>
+        <TouchableOpacity style={styles.navButtonSignIn} onPress={() => navigation.navigate('GyMate Sign-in')}>
           <Text style={styles.navButtonSignInText}>CLIQUE AQUI</Text>
-        </Pressable>
+        </TouchableOpacity>
       </View>
 
       <View style={styles.footer} />

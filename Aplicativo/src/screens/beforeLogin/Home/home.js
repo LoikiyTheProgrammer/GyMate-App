@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, View, Text, Pressable, Image } from 'react-native';
+import { SafeAreaView, View, Text, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import styles from '../../../constants/beforeLogin/styleHome';
 
@@ -22,21 +22,21 @@ export default function Home() {
             </View>
 
             <View style={styles.nav}>
-                <Pressable style={styles.navButtonSignIn} onPress={ () => navigation.navigate('GyMate Sign-in')}>
+                <TouchableOpacity style={styles.navButtonSignIn} onPress={ () => navigation.navigate('GyMate Sign-in')}>
                     <Text style={styles.navButtonSignInText}>LOGIN</Text>
-                </Pressable>
+                </TouchableOpacity>
 
-                <Pressable style={styles.navButtonSignUp} onPress={ () => navigation.navigate('GyMate Sign-up')}>
+                <TouchableOpacity style={styles.navButtonSignUp} onPress={ () => navigation.navigate('GyMate Sign-up')}>
                     <Text style={styles.navButtonSignUpText}>REGISTRAR-SE</Text>
-                </Pressable>
+                </TouchableOpacity>
 
-                {/* <Pressable style={styles.navButtonSignUp} onPress={ () => navigation.navigate('GyMate Auth')}>
+                {/* <TouchableOpacity style={styles.navButtonSignUp} onPress={ () => navigation.navigate('GyMate Auth')}>
                     <Text style={styles.navButtonSignUpText}>SING-IN/UP</Text>
-                </Pressable> */}
+                </TouchableOpacity> */}
 
-                <Pressable style={styles.navButtonCRUD} onPress={ () => navigation.navigate('GyMate CRUD')}>
+                <TouchableOpacity style={styles.navButtonCRUD} onPress={ () => navigation.navigate('GyMate CRUD')}>
                     <Text style={styles.navButtonCRUDText}>TELA DO CRUD</Text>
-                </Pressable>
+                </TouchableOpacity>
             </View>
         </SafeAreaView>
     );
