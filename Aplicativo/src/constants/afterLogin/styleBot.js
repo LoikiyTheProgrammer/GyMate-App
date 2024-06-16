@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     width: '90%',
     height: '80%',
     marginTop: '1%',
-    borderWidth: 2,
+    borderWidth: 4,
     borderRadius: 25,
     borderColor: '#1179e2',
     alignItems: 'center',
@@ -94,9 +94,13 @@ const styles = StyleSheet.create({
     width: '90%',
     height: '100%',
     paddingLeft: '5%',
+    borderWidth: 4,
+    borderRadius: 25,
+    borderColor: '#000',
     backgroundColor: '#d9d9d9',
   },
   exerciseListTitle: {
+    marginTop: '1%',
     fontSize: 30,
     color: '#000',
   },
@@ -104,14 +108,17 @@ const styles = StyleSheet.create({
   buttonAdd: {
     width: '40%',
     height: '20%',
+    marginBottom: '1%',
+    borderWidth: 4,
     borderRadius: 25,
+    borderColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'green',
+    backgroundColor: '#11d7a9',
   },
   buttonAddText: {
     fontSize: 20,
-    color: '#fff',
+    color: '#000',
   },
 
   footer: {

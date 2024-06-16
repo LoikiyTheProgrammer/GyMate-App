@@ -32,11 +32,11 @@ export default function Home() {
 
                 {/* <TouchableOpacity style={styles.navButtonSignUp} onPress={ () => navigation.navigate('GyMate Auth')}>
                     <Text style={styles.navButtonSignUpText}>SING-IN/UP</Text>
-                </TouchableOpacity> */}
+                </TouchableOpacity>
 
                 <TouchableOpacity style={styles.navButtonCRUD} onPress={ () => navigation.navigate('GyMate CRUD')}>
                     <Text style={styles.navButtonCRUDText}>TELA DO CRUD</Text>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
             </View>
         </SafeAreaView>
     );

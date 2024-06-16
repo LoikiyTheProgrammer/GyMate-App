@@ -25,7 +25,7 @@ export default function AI() {
 
             <View style={styles.main}>
                 <View style={styles.welcome}>
-                    <Image style={styles.botImage} source={require('../../../assets/AI-White-Icon.png')}/>
+                    <Image style={styles.botImage} source={require('../../../assets/AI-Icon.png')}/>
                     <Text style={styles.botText}>Escolha o que você deseja exercitar:</Text>
                 </View>
                 
