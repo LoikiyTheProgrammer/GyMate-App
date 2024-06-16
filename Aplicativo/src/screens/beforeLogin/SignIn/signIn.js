@@ -26,10 +26,10 @@ export default function SignIn() {
         <SafeAreaView style={styles.container}>
             <View style={styles.header}>
                 <Text style={styles.headerText}>GyMate</Text>
-                <Text style={styles.subHeaderText}>coloque seus dados de acesso para iniciar sua sessão</Text>
+                <Text style={styles.headerSubText}>coloque seus dados de acesso para iniciar sua sessão</Text>
             </View>
 
-            <View style={styles.signIn}>
+            <View style={styles.main}>
                 <TextInput
                     style={styles.input}
                     value={email}
@@ -44,26 +44,29 @@ export default function SignIn() {
                     placeholder='Digite sua senha'
                     secureTextEntry={true}
                 />
-                <Pressable style={styles.forgotButton}>
-                    <Text style={styles.forgotButtonText}>Esqueci minha senha</Text>
+
+                <Pressable style={styles.buttonForgot}>
+                    <Text style={styles.buttonForgotText}>Esqueci minha senha</Text>
                 </Pressable>
+
                 <Pressable style={styles.buttonSignIn} onPress={handleSignIn}>
-                    <Image style={styles.buttonBackgroundImage} source={require('../../../assets/Fundo-GyMate-90º.png')} />
+                    <Image style={styles.buttonImage} source={require('../../../assets/Fundo-GyMate-90º.png')} />
                     <Text style={styles.buttonSignInText}>ENTRAR</Text>
                 </Pressable>
+
                 <Pressable style={styles.buttonBack} onPress={() => navigation.navigate('GyMate')}>
                     <Text style={styles.buttonBackText}>VOLTAR</Text>
                 </Pressable>
             </View>
 
-            <View style={styles.changeAccess}>
-                <Text style={styles.changeAccessText}>Ainda não possui uma conta?</Text>
+            <View style={styles.nav}>
+                <Text style={styles.navText}>Ainda não possui uma conta?</Text>
                 <Pressable style={styles.navButtonSignUp} onPress={() => navigation.navigate('GyMate Sign-up')}>
                     <Text style={styles.navButtonSignUpText}>CLIQUE AQUI</Text>
                 </Pressable>
             </View>
 
-            <View style={styles.footer} />
+            <View style={styles.footer}/>
         </SafeAreaView>
     );
 }

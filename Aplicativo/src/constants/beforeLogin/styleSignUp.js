@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#162b9e',
+    backgroundColor: '#1179e2',
   },
 
   header: {
@@ -17,85 +17,86 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   headerText: {
-    color: '#fff',
     fontSize: 80,
+    color: '#fff',
     textAlign: 'center',
   },
-  subHeaderText: {
-    color: '#fff',
+  headerSubText: {
     fontSize: 20,
+    color: '#fff',
     textAlign: 'center',
   },
 
-  signUp: {
+  main: {
     width: '100%',
     height: '50%',
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   input: {
     width: '80%',
     height: '15%',
     margin: '1%',
-    borderRadius: 25,
+    paddingLeft: '2%',
     borderWidth: 2,
-    borderBlockColor: '#000',
-    color: '#162b9e',
+    borderRadius: 25,
+    borderColor: '#fff',
     fontSize: 20,
     fontWeight: 'bold',
-    paddingLeft: '2%',
-    backgroundColor: '#fff',
+    color: '#fff',
+    backgroundColor: '#1179e2',
   },
 
-  buttonCreateAccount: {
+  buttonSignUp: {
     width: '80%',
     height: '15%',
     margin: '1%',
-    borderRadius: 25,
     borderWidth: 2,
+    borderRadius: 25,
     borderColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#162b9e',
+    backgroundColor: '#1179e2',
   },
-  buttonCreateAccountText: {
-    color: '#fff',
+  buttonSignUpText: {
     fontSize: 25,
     fontWeight: 'bold',
+    color: '#fff',
+  },
+  buttonImage: {
+    width: '100%',
+    height: '100%',
+    borderRadius: 25,
+    position: 'absolute',
   },
 
   buttonBack: {
     width: '40%',
     height: '15%',
     margin: '1%',
-    borderRadius: 25,
     borderWidth: 2,
-    borderColor: '#fff',
+    borderRadius: 25,
+    borderColor: '#1179e2',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#162b9e',
+    backgroundColor: '#fff',
   },
   buttonBackText: {
-    color: '#fff',
     fontSize: 25,
     fontWeight: 'bold',
+    color: '#1179e2',
   },
-  buttonBackgroundImage: {
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
-    borderRadius: 25,
-  },
-  
-  changeAccess: {
+
+  nav: {
     width: '100%',
     height: '15%',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  changeAccessText: {
-    color: '#fff',
+  navText: {
     fontSize: 25,
+    color: '#fff',
   },
 
   navButtonSignIn: {
@@ -104,16 +105,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  buttonSignInText: {
-    color: '#fff',
+  navButtonSignInText: {
     fontSize: 25,
     fontWeight: 'bold',
+    color: '#fff',
   },
-  
+
   footer: {
     width: '100%',
     height: '5%',
-    position: 'relative',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#fff',

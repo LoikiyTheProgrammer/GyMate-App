@@ -17,95 +17,95 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   headerText: {
-    color: '#162b9e',
     fontSize: 80,
+    color: '#1179e2',
     textAlign: 'center',
   },
-  subHeaderText: {
-    color: '#162b9e',
+  headerSubText: {
     fontSize: 20,
+    color: '#1179e2',
     textAlign: 'center',
   },
 
-  signIn: {
+  main: {
     width: '100%',
     height: '50%',
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   input: {
     width: '80%',
     height: '15%',
     margin: '1%',
-    borderRadius: 25,
+    paddingLeft: '2%',
     borderWidth: 2,
-    borderBlockColor: '#000',
-    color: '#162b9e',
+    borderRadius: 25,
+    borderColor: '#1179e2',
     fontSize: 20,
     fontWeight: 'bold',
-    paddingLeft: '2%',
+    color: '#1179e2',
     backgroundColor: '#fff',
   },
 
-  forgotButton: {
+  buttonForgot: {
     width: '80%',
     height: 'auto',
     margin: '1%',
   },
-  forgotButtonText: {
-    color: '#162b9e',
+  buttonForgotText: {
     fontSize: 20,
+    color: '#1179e2',
   },
 
   buttonSignIn: {
     width: '80%',
     height: '15%',
     margin: '1%',
-    borderRadius: 25,
     borderWidth: 2,
-    borderColor: '#162b9e',
+    borderRadius: 25,
+    borderColor: '#1179e2',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#162b9e',
   },
   buttonSignInText: {
-    color: '#fff',
     fontSize: 25,
     fontWeight: 'bold',
+    color: '#fff',
+  },
+  buttonImage: {
+    width: '100%',
+    height: '100%',
+    borderRadius: 25,
+    position: 'absolute',
   },
 
   buttonBack: {
     width: '40%',
     height: '15%',
     margin: '1%',
-    borderRadius: 25,
     borderWidth: 2,
-    borderColor: '#162b9e',
+    borderRadius: 25,
+    borderColor: '#1179e2',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#162b9e',
+    backgroundColor: '#1179e2',
   },
   buttonBackText: {
-    color: '#fff',
     fontSize: 25,
     fontWeight: 'bold',
-  },
-  buttonBackgroundImage: {
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
-    borderRadius: 25,
+    color: '#fff',
   },
 
-  changeAccess: {
+  nav: {
     width: '100%',
     height: '15%',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  changeAccessText: {
-    color: '#162b9e',
+  navText: {
     fontSize: 25,
+    color: '#1179e2',
   },
 
   navButtonSignUp: {
@@ -115,18 +115,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   navButtonSignUpText: {
-    color: '#162b9e',
     fontSize: 25,
     fontWeight: 'bold',
+    color: '#1179e2',
   },
-  
+
   footer: {
     width: '100%',
     height: '5%',
-    position: 'relative',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#162b9e',
+    backgroundColor: '#1179e2',
   },
 });
 

@@ -26,10 +26,10 @@ export default function SignUp() {
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerText}>GyMate</Text>
-        <Text style={styles.subHeaderText}>coloque seus dados de acesso para criar sua conta</Text>
+        <Text style={styles.headerSubText}>coloque seus dados de acesso para criar sua conta</Text>
       </View>
 
-      <View style={styles.signUp}>
+      <View style={styles.main}>
         <TextInput
           style={styles.input}
           value={email}
@@ -44,19 +44,21 @@ export default function SignUp() {
           placeholder='Digite sua senha'
           secureTextEntry={true}
         />
-        <Pressable style={styles.buttonCreateAccount} onPress={handleSignUp}>
-          <Image style={styles.buttonBackgroundImage} source={require('../../../assets/Fundo-GyMate-90º.png')} />
-          <Text style={styles.buttonCreateAccountText}>CRIAR CONTA</Text>
+
+        <Pressable style={styles.buttonSignUp} onPress={handleSignUp}>
+          <Image style={styles.buttonImage} source={require('../../../assets/Fundo-GyMate-90º.png')} />
+          <Text style={styles.buttonSignUpText}>CRIAR CONTA</Text>
         </Pressable>
+
         <Pressable style={styles.buttonBack} onPress={() => navigation.navigate('GyMate')}>
           <Text style={styles.buttonBackText}>VOLTAR</Text>
         </Pressable>
       </View>
 
-      <View style={styles.changeAccess}>
-        <Text style={styles.changeAccessText}>Já possui uma conta?</Text>
+      <View style={styles.nav}>
+        <Text style={styles.navText}>Já possui uma conta?</Text>
         <Pressable style={styles.navButtonSignIn} onPress={() => navigation.navigate('GyMate Sign-in')}>
-          <Text style={styles.buttonSignInText}>CLIQUE AQUI</Text>
+          <Text style={styles.navButtonSignInText}>CLIQUE AQUI</Text>
         </Pressable>
       </View>
 

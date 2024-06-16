@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
     height: '100%',
     position: 'absolute',
   },
+
   header: {
     width: '100%',
     height: '40%',
@@ -22,23 +23,24 @@ const styles = StyleSheet.create({
   headerBox: {
     width: '80%',
     height: '80%',
-    borderRadius: 25,
     borderWidth: 2,
+    borderRadius: 25,
+    borderColor: '#1179e2',
     alignItems: 'center',
     justifyContent: 'center',
-    borderBlockColor: '#000',
     backgroundColor: '#fff',
   },
   headerText: {
-    color: '#162b9e',
     fontSize: 80,
+    color: '#1179e2',
     textAlign: 'center',
   },
-  subHeaderText: {
-    color: '#162b9e',
+  headerSubText: {
     fontSize: 20,
+    color: '#1179e2',
     textAlign: 'center',
   },
+
   welcome: {
     width: '100%',
     height: '20%',
@@ -46,56 +48,63 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   welcomeText: {
-    color: '#fff',
     fontSize: 40,
+    color: '#fff',
     textAlign: 'center',
   },
-  navScreens: {
+
+  nav: {
     width: '100%',
     height: '40%',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  navButtonLogin: {
+
+  navButtonSignIn: {
     width: '80%',
     height: '20%',
-    borderRadius: 25,
+    margin: '1%',
     borderWidth: 2,
-    borderColor: '#fff',
+    borderRadius: 25,
+    borderColor: '#1179e2',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#162b9e',
+    backgroundColor: '#fff',
   },
-  navButtonLoginText: {
-    color: '#fff',
+  navButtonSignInText: {
     fontSize: 25,
     fontWeight: 'bold',
+    color: '#1179e2',
   },
+
   navButtonSignUp: {
     width: '80%',
     height: '20%',
-    borderRadius: 25,
+    margin: '1%',
     borderWidth: 2,
-    borderColor: '#162b9e',
+    borderRadius: 25,
+    borderColor: '#1179e2',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#fff',
   },
   navButtonSignUpText: {
-    color: '#162b9e',
     fontSize: 25,
     fontWeight: 'bold',
+    color: '#1179e2',
   },
+
   navButtonCRUD: {
     width: 'auto',
     height: 'auto',
+    margin: '1%',
     alignItems: 'center',
     justifyContent: 'center',
   },
   navButtonCRUDText: {
-    color: '#fff',
     fontSize: 25,
     fontWeight: 'bold',
+    color: '#fff',
   },
 });
 
