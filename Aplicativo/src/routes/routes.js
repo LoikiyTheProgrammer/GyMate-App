@@ -4,7 +4,7 @@ import SignUp from '../screens/beforeLogin/SignUp/signUp';
 import SignIn from '../screens/beforeLogin/SignIn/signIn';
 import AuthScreen from '../screens/beforeLogin/Auth/auth';
 import CRUD from '../screens/beforeLogin/CRUD/crud';
-import InitialScreen from '../screens/afterLogin/InitialScreen/initialScreen';
+import Main from '../screens/afterLogin/Main/main';
 import AI from '../screens/afterLogin/Bot/bot';
 
 const Stack = createNativeStackNavigator();
@@ -44,7 +44,7 @@ export default function Routes() {
 
       <Stack.Screen
         name='GyMate Initial-Screen'
-        component={InitialScreen}
+        component={Main}
         options={{ headerShown: false}}
       />
 

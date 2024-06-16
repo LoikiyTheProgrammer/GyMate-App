@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { SafeAreaView, ScrollView, View, Text, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import styles from '../../../constants/afterLogin/styleInitialScreen';
+import styles from '../../../constants/afterLogin/styleMain';
 import { RoutineContext } from '../../../context/routineContext';
 
-export default function InitialScreen() {
+export default function Main() {
     const navigation = useNavigation();
     const { routines } = useContext(RoutineContext);
 
