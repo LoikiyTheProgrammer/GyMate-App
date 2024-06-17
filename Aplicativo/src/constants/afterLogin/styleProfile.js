@@ -49,11 +49,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
 
-    nav: {
+    logoutBox: {
         width: '90%',
-        height: '10%',
-        marginBottom: '1%',
-        paddingHorizontal: '5%',
+        height: width*0.9,
+        padding: '5%',
         borderWidth: 4,
         borderRadius: 25,
         borderColor: '#1179e2',
@@ -61,65 +60,34 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         justifyContent: 'space-between',
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'column',
         backgroundColor: '#fff',
     },
-    navText: {
+    profileImage: {
+        width: '60%',
+        height: '60%',
+    },
+    emailText: {
+        width: '80%',
+        textAlign: 'center',
         fontSize: 20,
         fontWeight: 'bold',
-        color: '#1179e2',
-    },
-
-    navButtonBot: {
-        width: 50,
-        height: 50,
-        borderWidth: 4,
-        borderRadius: 5,
-        borderColor: '#1179e2',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#1179e2',
-    },
-    navButtonBotImage: {
-        width: '100%',
-        height: '100%',
-        borderRadius: 5,
-    },
-
-    rotineListBox: {
-        width: '90%',
-        height: '80%',
-        borderWidth: 4,
-        borderRadius: 25,
-        borderColor: '#1179e2',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#fff',
-      },
-      rotineList: {
-        width: '100%',
-        height: '100%',
-        paddingLeft: '10%',
-        borderRadius: 25,
-        backgroundColor: '#fff',
-      },
-      rotineListTitle: {
-        fontSize: 30,
-        fontWeight: 'bold',
         color: '#000',
-      },
-    
-      exerciseList: {
+    },
+
+    buttonLogout: {
         width: '90%',
-        height: 'auto',
-        paddingLeft: '5%',
+        height: '20%',
+        marginBottom: '1%',
         borderWidth: 4,
-        borderColor: '#000',
         borderRadius: 25,
-        backgroundColor: '#d9d9d9',
+        borderColor: '#000',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'red',
       },
-      exerciseListTitle: {
-        fontSize: 30,
+      buttonLogoutText: {
+        fontSize: 20,
         fontWeight: 'bold',
         color: '#000',
       },

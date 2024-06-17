@@ -60,7 +60,7 @@ export default function Main() {
                     <Image style={styles.footerButtonsImage} source={require('../../../assets/Home-Icon.png')}/>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.footerButtonConfg}>
+                <TouchableOpacity style={styles.footerButtonConfg} onPress={() => navigation.navigate('GyMate Profile')}>
                     <Image style={styles.footerButtonsImage} source={require('../../../assets/Profile-Icon.png')}/>
                 </TouchableOpacity>
             </View>

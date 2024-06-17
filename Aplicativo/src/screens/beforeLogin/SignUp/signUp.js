@@ -16,7 +16,7 @@ export default function SignUp() {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       console.log('User created successfully!');
-      navigation.navigate('GyMate Initial-Screen');
+      navigation.navigate('GyMate Main');
     } catch (error) {
       console.error('Authentication error:', error.message);
     }
@@ -35,6 +35,7 @@ export default function SignUp() {
           value={email}
           onChangeText={setEmail}
           placeholder='Digite seu e-mail'
+          placeholderTextColor={'#fff'}
           keyboardType='email-address'
         />
         <TextInput
@@ -42,6 +43,7 @@ export default function SignUp() {
           value={password}
           onChangeText={setPassword}
           placeholder='Digite sua senha'
+          placeholderTextColor={'#fff'}
           secureTextEntry={true}
         />
 

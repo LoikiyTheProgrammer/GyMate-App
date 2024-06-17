@@ -16,13 +16,13 @@ const styles = StyleSheet.create({
 
   header: {
     width: '100%',
-    height: '40%',
+    height: '50%',
     alignItems: 'center',
     justifyContent: 'center',
   },
   headerBox: {
     width: '80%',
-    height: '80%',
+    height: width*0.8,
     borderWidth: 4,
     borderRadius: 25,
     borderColor: '#1179e2',
@@ -43,9 +43,9 @@ const styles = StyleSheet.create({
 
   welcome: {
     width: '100%',
-    height: '20%',
+    height: '10%',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
   },
   welcomeText: {
     fontSize: 40,

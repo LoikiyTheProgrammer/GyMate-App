@@ -6,6 +6,7 @@ import AuthScreen from '../screens/beforeLogin/Auth/auth';
 import CRUD from '../screens/beforeLogin/CRUD/crud';
 import Main from '../screens/afterLogin/Main/main';
 import AI from '../screens/afterLogin/Bot/bot';
+import Profile from '../screens/afterLogin/Profile/profile';
 
 const Stack = createNativeStackNavigator();
 
@@ -43,7 +44,7 @@ export default function Routes() {
       />
 
       <Stack.Screen
-        name='GyMate Initial-Screen'
+        name='GyMate Main'
         component={Main}
         options={{ headerShown: false}}
       />
@@ -51,6 +52,12 @@ export default function Routes() {
       <Stack.Screen
         name='GyMate AI-Bot'
         component={AI}
+        options={{ headerShown: false}}
+      />
+
+      <Stack.Screen
+        name='GyMate Profile'
+        component={Profile}
         options={{ headerShown: false}}
       />
     </Stack.Navigator>

@@ -43,7 +43,6 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     borderColor: '#1179e2',
     fontSize: 20,
-    fontWeight: 'bold',
     color: '#1179e2',
     backgroundColor: '#fff',
   },

@@ -32,14 +32,14 @@ const styles = StyleSheet.create({
   buttonNotification: {
     width: 50,
     height: 50,
-    borderRadius: '100%',
+    borderRadius: 25,
     alignItems: 'center',
     justifyContent: 'center',
   },
   notificationImage: {
     width: '100%',
     height: '100%',
-    borderRadius: '100%',
+    borderRadius: 25,
   },
 
   main: {
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   welcome: {
     width: '90%',
     height: '10%',
-    marginBottom: '1%',
+    paddingHorizontal: '5%',
     alignItems: 'center',
     justifyContent: 'center',
     justifyContent: 'space-between',
@@ -65,13 +65,13 @@ const styles = StyleSheet.create({
   },
   botText: {
     fontSize: 20,
+    fontWeight: 'bold',
     color: '#fff',
   },
 
   rotineListBox: {
     width: '90%',
     height: '80%',
-    marginTop: '1%',
     borderWidth: 4,
     borderRadius: 25,
     borderColor: '#1179e2',
@@ -82,42 +82,45 @@ const styles = StyleSheet.create({
   rotineList: {
     width: '100%',
     height: '100%',
+    paddingLeft: '10%',
     borderRadius: 25,
     backgroundColor: '#fff',
   },
   rotineListTitle: {
-    fontSize: 40,
+    fontSize: 30,
+    fontWeight: 'bold',
     color: '#000',
   },
 
   exerciseList: {
     width: '90%',
-    height: '100%',
+    height: 'auto',
     paddingLeft: '5%',
     borderWidth: 4,
-    borderRadius: 25,
     borderColor: '#000',
+    borderRadius: 25,
     backgroundColor: '#d9d9d9',
   },
   exerciseListTitle: {
-    marginTop: '1%',
     fontSize: 30,
+    fontWeight: 'bold',
     color: '#000',
   },
 
   buttonAdd: {
     width: '40%',
     height: '20%',
-    marginBottom: '1%',
+    marginBottom: '2%',
     borderWidth: 4,
     borderRadius: 25,
     borderColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#11d7a9',
+    backgroundColor: 'green',
   },
   buttonAddText: {
-    fontSize: 20,
+    fontSize: 15,
+    fontWeight: 'bold',
     color: '#000',
   },
 
@@ -136,28 +139,28 @@ const styles = StyleSheet.create({
   footerButtonChat: {
     width: 50,
     height: '100%',
-    borderRadius: '100%',
+    borderRadius: 25,
     alignItems: 'center',
     justifyContent: 'center',
   },
   footerButtonHome: {
     width: 50,
     height: '100%',
-    borderRadius: '100%',
+    borderRadius: 25,
     alignItems: 'center',
     justifyContent: 'center',
   },
   footerButtonConfg: {
     width: 50,
     height: '100%',
-    borderRadius: '100%',
+    borderRadius: 25,
     alignItems: 'center',
     justifyContent: 'center',
   },
   footerButtonsImage: {
     width: '100%',
     height: '100%',
-    borderRadius: '100%',
+    borderRadius: 25,
   }
 });
 

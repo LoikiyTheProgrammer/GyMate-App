@@ -26,7 +26,7 @@ export default function AI() {
             <View style={styles.main}>
                 <View style={styles.welcome}>
                     <Image style={styles.botImage} source={require('../../../assets/AI-Icon.png')}/>
-                    <Text style={styles.botText}>Escolha o que você deseja exercitar:</Text>
+                    <Text style={styles.botText}>O que você deseja exercitar:</Text>
                 </View>
                 
                 <View style={styles.rotineListBox}>
@@ -35,17 +35,17 @@ export default function AI() {
                         <ScrollView style={styles.exerciseList}>
                             <Text style={styles.exerciseListTitle}>A</Text>
                             <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Braço', 'A')}>
-                                <Text style={styles.buttonAddText}>Adicionar</Text>
+                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
 
                             <Text style={styles.exerciseListTitle}>B</Text>
                             <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Braço', 'B')}>
-                                <Text style={styles.buttonAddText}>Adicionar</Text>
+                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
 
                             <Text style={styles.exerciseListTitle}>C</Text>
                             <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Braço', 'C')}>
-                                <Text style={styles.buttonAddText}>Adicionar</Text>
+                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
                         </ScrollView>
 
@@ -53,17 +53,17 @@ export default function AI() {
                         <ScrollView style={styles.exerciseList}>
                             <Text style={styles.exerciseListTitle}>A</Text>
                             <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Perna', 'A')}>
-                                <Text style={styles.buttonAddText}>Adicionar</Text>
+                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
 
                             <Text style={styles.exerciseListTitle}>B</Text>
                             <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Perna', 'B')}>
-                                <Text style={styles.buttonAddText}>Adicionar</Text>
+                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
 
                             <Text style={styles.exerciseListTitle}>C</Text>
                             <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Perna', 'C')}>
-                                <Text style={styles.buttonAddText}>Adicionar</Text>
+                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
                         </ScrollView>
 
@@ -71,17 +71,17 @@ export default function AI() {
                         <ScrollView style={styles.exerciseList}>
                             <Text style={styles.exerciseListTitle}>A</Text>
                             <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Peito', 'A')}>
-                                <Text style={styles.buttonAddText}>Adicionar</Text>
+                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
 
                             <Text style={styles.exerciseListTitle}>B</Text>
                             <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Peito', 'B')}>
-                                <Text style={styles.buttonAddText}>Adicionar</Text>
+                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
 
                             <Text style={styles.exerciseListTitle}>C</Text>
                             <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Peito', 'C')}>
-                                <Text style={styles.buttonAddText}>Adicionar</Text>
+                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
                         </ScrollView>
                     </ScrollView>
@@ -93,11 +93,11 @@ export default function AI() {
                     <Image style={styles.footerButtonsImage} source={require('../../../assets/Chat-Icon.png')}/>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.footerButtonHome} onPress={() => navigation.navigate('GyMate Initial-Screen')}>
+                <TouchableOpacity style={styles.footerButtonHome} onPress={() => navigation.navigate('GyMate Main')}>
                     <Image style={styles.footerButtonsImage} source={require('../../../assets/Return-Icon.png')}/>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.footerButtonConfg}>
+                <TouchableOpacity style={styles.footerButtonConfg} onPress={() => navigation.navigate('GyMate Profile')}>
                     <Image style={styles.footerButtonsImage} source={require('../../../assets/Profile-Icon.png')}/>
                 </TouchableOpacity>
             </View>

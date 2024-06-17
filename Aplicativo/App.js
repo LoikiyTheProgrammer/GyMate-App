@@ -8,7 +8,7 @@ export default function App() {
   return (
     <RoutineProvider>
       <NavigationContainer>
-        <StatusBar backgroundColor='#fff' barStyle='dark-content'/>
+        <StatusBar hidden/>
         <Routes/>
       </NavigationContainer>
     </RoutineProvider>

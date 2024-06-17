@@ -5,7 +5,6 @@ import { app } from '../../../components/confg';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from '@firebase/auth';
 
 const AuthScreen = ({ email, setEmail, password, setPassword, isLogin, setIsLogin, handleAuthentication }) => {
-
     const navigation = useNavigation()
 
     return (
@@ -42,10 +41,10 @@ const AuthScreen = ({ email, setEmail, password, setPassword, isLogin, setIsLogi
 const AuthenticatedScreen = ({ user, handleAuthentication }) => {
     return (
         <View style={styles.authContainer}>
-        <Text style={styles.title}>Welcome</Text>
-        <Text style={styles.emailText}>{user.email}</Text>
-        <Button title="Logout" onPress={handleAuthentication} color="#e74c3c" />
-      </View>
+            <Text style={styles.title}>Welcome</Text>
+            <Text style={styles.emailText}>{user.email}</Text>
+            <Button title="Logout" onPress={handleAuthentication} color="#e74c3c" />
+        </View>
     );
 }
 
@@ -95,13 +94,13 @@ export default App = () => {
         ) : (
             // Show sign-in or sign-up form if user is not authenticated
             <AuthScreen
-            email={email}
-            setEmail={setEmail}
-            password={password}
-            setPassword={setPassword}
-            isLogin={isLogin}
-            setIsLogin={setIsLogin}
-            handleAuthentication={handleAuthentication}
+                email={email}
+                setEmail={setEmail}
+                password={password}
+                setPassword={setPassword}
+                isLogin={isLogin}
+                setIsLogin={setIsLogin}
+                handleAuthentication={handleAuthentication}
             />
         )}
       </ScrollView>
