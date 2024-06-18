@@ -53,7 +53,6 @@ const styles = StyleSheet.create({
     margin: '1%',
   },
   buttonForgotText: {
-    textAlign: 'left',
     fontSize: 20,
     color: '#1179e2',
   },
@@ -77,7 +76,7 @@ const styles = StyleSheet.create({
   buttonImage: {
     width: '100%',
     height: '100%',
-    borderRadius: 25,
+    borderRadius: 20,
     position: 'absolute',
   },
 
@@ -85,9 +84,7 @@ const styles = StyleSheet.create({
     width: '40%',
     height: '18%',
     margin: '1%',
-    borderWidth: 4,
-    borderRadius: 25,
-    borderColor: '#1179e2',
+    borderRadius: 20,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#1179e2',

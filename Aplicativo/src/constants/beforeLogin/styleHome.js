@@ -32,13 +32,13 @@ const styles = StyleSheet.create({
   },
   headerText: {
     fontSize: 80,
-    color: '#1179e2',
     textAlign: 'center',
+    color: '#1179e2',
   },
   headerSubText: {
     fontSize: 20,
-    color: '#1179e2',
     textAlign: 'center',
+    color: '#1179e2',
   },
 
   welcome: {
@@ -49,8 +49,8 @@ const styles = StyleSheet.create({
   },
   welcomeText: {
     fontSize: 40,
-    color: '#fff',
     textAlign: 'center',
+    color: '#fff',
   },
 
   nav: {

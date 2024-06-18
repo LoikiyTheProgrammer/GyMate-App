@@ -87,6 +87,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   rotineListTitle: {
+    width: '90%',
+    marginBottom: '2%',
+    borderBottomWidth: 4,
+    borderColor: '#000',
     fontSize: 30,
     fontWeight: 'bold',
     color: '#000',
@@ -94,7 +98,7 @@ const styles = StyleSheet.create({
 
   exerciseList: {
     width: '90%',
-    height: '100%',
+    height: 'auto',
     marginBottom: '5%',
     paddingLeft: '5%',
     borderWidth: 1,
@@ -162,7 +166,7 @@ const styles = StyleSheet.create({
   },
   footerButtonsImage: {
     width: '100%',
-    height: '100%',
+    height: '90%',
     borderRadius: 25,
   }
 });

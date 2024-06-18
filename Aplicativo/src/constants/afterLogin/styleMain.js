@@ -32,14 +32,14 @@ const styles = StyleSheet.create({
     buttonNotification: {
         width: 50,
         height: 50,
-        borderRadius: 0,
+        borderRadius: 25,
         alignItems: 'center',
         justifyContent: 'center',
     },
     notificationImage: {
         width: '100%',
         height: '100%',
-        borderRadius: 0,
+        borderRadius: 25,
     },
 
     main: {
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: '5%',
         borderWidth: 4,
         borderRadius: 10,
-        borderColor: '#1179e2',
+        borderColor: '#1179e3',
         alignItems: 'center',
         justifyContent: 'center',
         justifyContent: 'space-between',
@@ -74,16 +74,16 @@ const styles = StyleSheet.create({
         width: 50,
         height: 50,
         borderWidth: 4,
-        borderRadius: 5,
+        borderRadius: 25,
         borderColor: '#1179e2',
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#1179e2',
     },
     navButtonBotImage: {
-        width: '100%',
-        height: '100%',
-        borderRadius: 5,
+        width: '80%',
+        height: '80%',
+        borderRadius: 10,
     },
 
     rotineListBox: {
@@ -104,6 +104,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
       },
       rotineListTitle: {
+        width: '90%',
+        marginBottom: '2%',
+        borderBottomWidth: 4,
+        borderColor: '#000',
         fontSize: 30,
         fontWeight: 'bold',
         color: '#000',
@@ -162,7 +166,7 @@ const styles = StyleSheet.create({
     },
     footerButtonsImage: {
         width: '100%',
-        height: '100%',
+        height: '90%',
         borderRadius: 25,
     }
 });

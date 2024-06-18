@@ -18,13 +18,13 @@ const styles = StyleSheet.create({
   },
   headerText: {
     fontSize: 80,
-    color: '#fff',
     textAlign: 'center',
+    color: '#fff',
   },
   headerSubText: {
     fontSize: 20,
-    color: '#fff',
     textAlign: 'center',
+    color: '#fff',
   },
 
   main: {
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   buttonImage: {
     width: '100%',
     height: '100%',
-    borderRadius: 25,
+    borderRadius: 20,
     position: 'absolute',
   },
 
@@ -74,9 +74,7 @@ const styles = StyleSheet.create({
     width: '40%',
     height: '18%',
     margin: '1%',
-    borderWidth: 4,
     borderRadius: 25,
-    borderColor: '#1179e2',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#fff',

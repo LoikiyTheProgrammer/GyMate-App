@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     },
     footerButtonsImage: {
         width: '100%',
-        height: '100%',
+        height: '90%',
         borderRadius: 25,
     }
 });

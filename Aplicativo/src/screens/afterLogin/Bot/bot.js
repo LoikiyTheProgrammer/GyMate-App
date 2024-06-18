@@ -31,65 +31,65 @@ export default function AI() {
 
                 <View style={styles.rotineListBox}>
                     <ScrollView style={styles.rotineList}>
-                        <Text style={styles.rotineListTitle}>Treino de Braço:</Text>
+                    <Text style={styles.rotineListTitle}>Treino de Braço:</Text>
                         <ScrollView style={styles.exerciseList}>
-                            <Text style={styles.exerciseListTitle}>Exemplo1</Text>
-                            <Text style={styles.exerciseListSubTitle}>Bi-set 30</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Braço', 'Exemplo1', 'Bi-set 30')}>
+                            <Text style={styles.exerciseListTitle}>Rosca Direta</Text>
+                            <Text style={styles.exerciseListSubTitle}>Bi-set 20</Text>
+                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Braço:', 'Rosca Direta', 'Bi-set 20')}>
                                 <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
 
-                            <Text style={styles.exerciseListTitle}>Exemplo2</Text>
-                            <Text style={styles.exerciseListSubTitle}>Bi-set 30</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Braço', 'Exemplo2', 'Bi-set 30')}>
+                            <Text style={styles.exerciseListTitle}>Tríceps Pulley</Text>
+                            <Text style={styles.exerciseListSubTitle}>Bi-set 20</Text>
+                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Braço:', 'Tríceps Pulley', 'Bi-set 20')}>
                                 <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
 
-                            <Text style={styles.exerciseListTitle}>Exemplo3</Text>
-                            <Text style={styles.exerciseListSubTitle}>Bi-set 30</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Braço', 'Exemplo3', 'Bi-set 30')}>
+                            <Text style={styles.exerciseListTitle}>Rosca Martelo</Text>
+                            <Text style={styles.exerciseListSubTitle}>Bi-set 20</Text>
+                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Braço:', 'Rosca Martelo', 'Bi-set 20')}>
                                 <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
                         </ScrollView>
 
                         <Text style={styles.rotineListTitle}>Treino de Perna:</Text>
                         <ScrollView style={styles.exerciseList}>
-                            <Text style={styles.exerciseListTitle}>Exemplo1</Text>
-                            <Text style={styles.exerciseListSubTitle}>Bi-set 10</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Perna', 'Exemplo1', 'Bi-set 10')}>
+                            <Text style={styles.exerciseListTitle}>Leg Press</Text>
+                            <Text style={styles.exerciseListSubTitle}>Tri-set 10</Text>
+                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Perna:', 'Agachamento', 'Tri-set 10')}>
                                 <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
 
-                            <Text style={styles.exerciseListTitle}>Exemplo2</Text>
-                            <Text style={styles.exerciseListSubTitle}>Bi-set 10</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Perna', 'Exemplo2', 'Bi-set 10')}>
+                            <Text style={styles.exerciseListTitle}>Cadeira Flexora</Text>
+                            <Text style={styles.exerciseListSubTitle}>Bi-set 20</Text>
+                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Perna:', 'Cadeira Flexora', 'Bi-set 20')}>
                                 <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
 
-                            <Text style={styles.exerciseListTitle}>Exemplo3</Text>
-                            <Text style={styles.exerciseListSubTitle}>Bi-set 10</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Perna', 'Exemplo3', 'Bi-set 10')}>
+                            <Text style={styles.exerciseListTitle}>Cadeira Extensora</Text>
+                            <Text style={styles.exerciseListSubTitle}>Bi-set 20</Text>
+                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Perna:', 'Cadeira Extensora', 'Bi-set 20')}>
                                 <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
                         </ScrollView>
 
                         <Text style={styles.rotineListTitle}>Treino de Abdômen:</Text>
                         <ScrollView style={styles.exerciseList}>
-                            <Text style={styles.exerciseListTitle}>Exemplo1</Text>
-                            <Text style={styles.exerciseListSubTitle}>Bi-set 20</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Abdômen', 'Exemplo1', 'Bi-set 20')}>
+                            <Text style={styles.exerciseListTitle}>Abdominal</Text>
+                            <Text style={styles.exerciseListSubTitle}>Tri-set 20</Text>
+                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Abdômen:', 'Abdominal', 'Tri-set 20')}>
                                 <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
 
-                            <Text style={styles.exerciseListTitle}>Exemplo2</Text>
-                            <Text style={styles.exerciseListSubTitle}>Bi-set 20</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Abdômen', 'Exemplo2', 'Bi-set 20')}>
+                            <Text style={styles.exerciseListTitle}>Flexão Lateral</Text>
+                            <Text style={styles.exerciseListSubTitle}>Tri-set 10</Text>
+                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Abdômen:', 'Flexão Lateral', 'Tri-set 10')}>
                                 <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
 
-                            <Text style={styles.exerciseListTitle}>Exemplo3</Text>
-                            <Text style={styles.exerciseListSubTitle}>Bi-set 20</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Abdômen', 'Exemplo3', 'Bi-set 20')}>
+                            <Text style={styles.exerciseListTitle}>Prancha</Text>
+                            <Text style={styles.exerciseListSubTitle}>Tri-set 1min</Text>
+                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Abdômen:', 'Prancha', 'Tri-set 1min')}>
                                 <Text style={styles.buttonAddText}>ADICIONAR</Text>
                             </TouchableOpacity>
                         </ScrollView>
