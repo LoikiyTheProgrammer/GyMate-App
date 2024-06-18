@@ -36,9 +36,9 @@ const styles = StyleSheet.create({
 
   input: {
     width: '80%',
-    height: '15%',
+    height: '18%',
     margin: '1%',
-    paddingLeft: '2%',
+    paddingLeft: '5%',
     borderWidth: 4,
     borderRadius: 25,
     borderColor: '#fff',
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
 
   buttonSignUp: {
     width: '80%',
-    height: '15%',
+    height: '18%',
     margin: '1%',
     borderWidth: 4,
     borderRadius: 25,
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
 
   buttonBack: {
     width: '40%',
-    height: '15%',
+    height: '18%',
     margin: '1%',
     borderWidth: 4,
     borderRadius: 25,

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import styles from '../../../constants/beforeLogin/styleSignUp';
 import { SafeAreaView, View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import styles from '../../../constants/beforeLogin/styleSignUp';
 import { getAuth, createUserWithEmailAndPassword } from '@firebase/auth';
 import { app } from '../../../components/confg';
 

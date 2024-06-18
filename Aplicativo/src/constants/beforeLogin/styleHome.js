@@ -94,18 +94,18 @@ const styles = StyleSheet.create({
     color: '#1179e2',
   },
 
-  navButtonCRUD: {
-    width: 'auto',
-    height: 'auto',
-    margin: '1%',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  navButtonCRUDText: {
-    fontSize: 25,
-    fontWeight: 'bold',
-    color: '#fff',
-  },
+  // navButtonCRUD: {
+  //   width: 'auto',
+  //   height: 'auto',
+  //   margin: '1%',
+  //   alignItems: 'center',
+  //   justifyContent: 'center',
+  // },
+  // navButtonCRUDText: {
+  //   fontSize: 25,
+  //   fontWeight: 'bold',
+  //   color: '#fff',
+  // },
 });
 
 export default styles;

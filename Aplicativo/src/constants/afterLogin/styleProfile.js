@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
         height: width*0.9,
         padding: '5%',
         borderWidth: 4,
-        borderRadius: 25,
+        borderRadius: 10,
         borderColor: '#1179e2',
         alignItems: 'center',
         justifyContent: 'center',
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
         height: '60%',
     },
     emailText: {
-        width: '80%',
+        width: '90%',
         textAlign: 'center',
         fontSize: 20,
         fontWeight: 'bold',
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
         height: '20%',
         marginBottom: '1%',
         borderWidth: 4,
-        borderRadius: 25,
+        borderRadius: 10,
         borderColor: '#000',
         alignItems: 'center',
         justifyContent: 'center',
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
       buttonLogoutText: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: '#000',
+        color: '#fff',
       },
 
     footer: {

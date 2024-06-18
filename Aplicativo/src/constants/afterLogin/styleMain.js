@@ -32,14 +32,14 @@ const styles = StyleSheet.create({
     buttonNotification: {
         width: 50,
         height: 50,
-        borderRadius: 25,
+        borderRadius: 0,
         alignItems: 'center',
         justifyContent: 'center',
     },
     notificationImage: {
         width: '100%',
         height: '100%',
-        borderRadius: 25,
+        borderRadius: 0,
     },
 
     main: {
@@ -52,10 +52,10 @@ const styles = StyleSheet.create({
     nav: {
         width: '90%',
         height: '10%',
-        marginBottom: '1%',
+        marginBottom: '5%',
         paddingHorizontal: '5%',
         borderWidth: 4,
-        borderRadius: 25,
+        borderRadius: 10,
         borderColor: '#1179e2',
         alignItems: 'center',
         justifyContent: 'center',
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
         width: '90%',
         height: '80%',
         borderWidth: 4,
-        borderRadius: 25,
+        borderRadius: 10,
         borderColor: '#1179e2',
         alignItems: 'center',
         justifyContent: 'center',
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         paddingLeft: '10%',
-        borderRadius: 25,
+        borderRadius: 10,
         backgroundColor: '#fff',
       },
       rotineListTitle: {
@@ -112,15 +112,18 @@ const styles = StyleSheet.create({
       exerciseList: {
         width: '90%',
         height: 'auto',
+        marginBottom: '5%',
         paddingLeft: '5%',
-        borderWidth: 4,
+        borderWidth: 1,
         borderColor: '#000',
-        borderRadius: 25,
         backgroundColor: '#d9d9d9',
       },
       exerciseListTitle: {
         fontSize: 30,
-        fontWeight: 'bold',
+        color: '#000',
+      },
+      exerciseListSubTitle: {
+        fontSize: 20,
         color: '#000',
       },
 
