@@ -1,16 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styles from '../../../constants/afterLogin/styleBot';
-import { SafeAreaView, ScrollView, View, Text, TouchableOpacity, Image } from 'react-native';
+import { SafeAreaView, View, ScrollView, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { RoutineContext } from '../../../context/routineContext';
 
-export default function AI() {
+export default function Bot() {
     const navigation = useNavigation();
-    const { addRoutine } = useContext(RoutineContext);
-
-    const handleAddRoutine = (type, exercise, subtitle) => {
-        addRoutine({ type, exercise, subtitle });
-    };
 
     return (
         <SafeAreaView style={styles.container}>
@@ -30,69 +24,20 @@ export default function AI() {
                 </View>
 
                 <View style={styles.rotineListBox}>
-                    <ScrollView style={styles.rotineList}>
-                    <Text style={styles.rotineListTitle}>Treino de Braço:</Text>
-                        <ScrollView style={styles.exerciseList}>
-                            <Text style={styles.exerciseListTitle}>Rosca Direta</Text>
-                            <Text style={styles.exerciseListSubTitle}>Bi-set 20</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Braço:', 'Rosca Direta', 'Bi-set 20')}>
-                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
-                            </TouchableOpacity>
+                    <View style={styles.GeminiBox}>
+                        <TextInput
+                            style={styles.GeminiInput}
+                            placeholder='Digite aqui'
+                            placeholderTextColor={'#1179e2'}
+                        />
 
-                            <Text style={styles.exerciseListTitle}>Tríceps Pulley</Text>
-                            <Text style={styles.exerciseListSubTitle}>Bi-set 20</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Braço:', 'Tríceps Pulley', 'Bi-set 20')}>
-                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
-                            </TouchableOpacity>
+                        <TouchableOpacity style={styles.GeminiButton}>
+                            <Text style={styles.GeminiButtonText}>Enter</Text>
+                        </TouchableOpacity>
+                    </View>
 
-                            <Text style={styles.exerciseListTitle}>Rosca Martelo</Text>
-                            <Text style={styles.exerciseListSubTitle}>Bi-set 20</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Braço:', 'Rosca Martelo', 'Bi-set 20')}>
-                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
-                            </TouchableOpacity>
-                        </ScrollView>
-
-                        <Text style={styles.rotineListTitle}>Treino de Perna:</Text>
-                        <ScrollView style={styles.exerciseList}>
-                            <Text style={styles.exerciseListTitle}>Leg Press</Text>
-                            <Text style={styles.exerciseListSubTitle}>Tri-set 10</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Perna:', 'Agachamento', 'Tri-set 10')}>
-                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
-                            </TouchableOpacity>
-
-                            <Text style={styles.exerciseListTitle}>Cadeira Flexora</Text>
-                            <Text style={styles.exerciseListSubTitle}>Bi-set 20</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Perna:', 'Cadeira Flexora', 'Bi-set 20')}>
-                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
-                            </TouchableOpacity>
-
-                            <Text style={styles.exerciseListTitle}>Cadeira Extensora</Text>
-                            <Text style={styles.exerciseListSubTitle}>Bi-set 20</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Perna:', 'Cadeira Extensora', 'Bi-set 20')}>
-                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
-                            </TouchableOpacity>
-                        </ScrollView>
-
-                        <Text style={styles.rotineListTitle}>Treino de Abdômen:</Text>
-                        <ScrollView style={styles.exerciseList}>
-                            <Text style={styles.exerciseListTitle}>Abdominal</Text>
-                            <Text style={styles.exerciseListSubTitle}>Tri-set 20</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Abdômen:', 'Abdominal', 'Tri-set 20')}>
-                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
-                            </TouchableOpacity>
-
-                            <Text style={styles.exerciseListTitle}>Flexão Lateral</Text>
-                            <Text style={styles.exerciseListSubTitle}>Tri-set 10</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Abdômen:', 'Flexão Lateral', 'Tri-set 10')}>
-                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
-                            </TouchableOpacity>
-
-                            <Text style={styles.exerciseListTitle}>Prancha</Text>
-                            <Text style={styles.exerciseListSubTitle}>Tri-set 1min</Text>
-                            <TouchableOpacity style={styles.buttonAdd} onPress={() => handleAddRoutine('Treino de Abdômen:', 'Prancha', 'Tri-set 1min')}>
-                                <Text style={styles.buttonAddText}>ADICIONAR</Text>
-                            </TouchableOpacity>
-                        </ScrollView>
+                    <ScrollView style={styles.GeminiAnswer}>
+                        
                     </ScrollView>
                 </View>
             </View>

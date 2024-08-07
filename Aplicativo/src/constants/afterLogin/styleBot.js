@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native';
 import { width, height} from '../dimensions';
 
 const styles = StyleSheet.create({
+
   container: {
     flex: 1,
     alignItems: 'center',
@@ -72,6 +73,7 @@ const styles = StyleSheet.create({
   rotineListBox: {
     width: '90%',
     height: '80%',
+    paddingVertical: '5%',
     borderWidth: 4,
     borderRadius: 10,
     borderColor: '#1179e2',
@@ -79,56 +81,49 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#fff',
   },
-  rotineList: {
-    width: '100%',
-    height: '100%',
-    paddingLeft: '10%',
-    borderRadius: 10,
+
+  GeminiBox: {
+    width: '80%',
+    height: '20%',
+    justifyContent: 'center',
+    justifyContent: 'space-between',
+    display: 'flex',
+    flexDirection: 'row',
+
+  },
+
+  GeminiInput: {
+    width: '75%',
+    height: '50%',
+    paddingLeft: '5%',
+    borderWidth: 2,
+    borderRadius: 5,
+    borderColor: '#1179e2',
+    fontSize: 20,
+    color: '#1179e2',
     backgroundColor: '#fff',
   },
-  rotineListTitle: {
-    width: '90%',
-    marginBottom: '2%',
-    borderBottomWidth: 4,
-    borderColor: '#000',
-    fontSize: 30,
-    fontWeight: 'bold',
-    color: '#000',
-  },
 
-  exerciseList: {
-    width: '90%',
-    height: 'auto',
-    marginBottom: '5%',
-    paddingLeft: '5%',
-    borderWidth: 1,
-    borderColor: '#000',
-    backgroundColor: '#d9d9d9',
-  },
-  exerciseListTitle: {
-    fontSize: 30,
-    color: '#000',
-  },
-  exerciseListSubTitle: {
-    fontSize: 20,
-    color: '#000',
-  },
-
-  buttonAdd: {
-    width: '95%',
-    height: '10%',
-    marginBottom: '5%',
-    borderWidth: 1,
-    borderColor: '#000',
+  GeminiButton: {
+    width: '20%',
+    height: '50%',
     borderRadius: 5,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'green',
+    backgroundColor: '#1179e2',
   },
-  buttonAddText: {
+  GeminiButtonText: {
     fontSize: 20,
     fontWeight: 'bold',
     color: '#fff',
+  },
+
+  GeminiAnswer: {
+    width: '80%',
+    height: '10%',
+    borderWidth: 2,
+    borderRadius: 5,
+    borderColor: '#1179e2',
   },
 
   footer: {

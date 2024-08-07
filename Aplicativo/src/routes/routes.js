@@ -1,11 +1,10 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../screens/beforeLogin/Home/home';
-import SignUp from '../screens/beforeLogin/SignUp/signUp';
 import SignIn from '../screens/beforeLogin/SignIn/signIn';
-import AuthScreen from '../screens/beforeLogin/Auth/auth';
+import SignUp from '../screens/beforeLogin/SignUp/signUp';
 import CRUD from '../screens/beforeLogin/CRUD/crud';
 import Main from '../screens/afterLogin/Main/main';
-import AI from '../screens/afterLogin/Bot/bot';
+import Bot from '../screens/afterLogin/Bot/bot';
 import Profile from '../screens/afterLogin/Profile/profile';
 
 const Stack = createNativeStackNavigator();
@@ -32,12 +31,6 @@ export default function Routes() {
       />
 
       <Stack.Screen
-        name='GyMate Auth'
-        component={AuthScreen}
-        options={{ headerShown: false}}
-      />
-
-      <Stack.Screen
         name='GyMate CRUD'
         component={CRUD}
         options={{ headerShown: false}}
@@ -51,7 +44,7 @@ export default function Routes() {
 
       <Stack.Screen
         name='GyMate AI-Bot'
-        component={AI}
+        component={Bot}
         options={{ headerShown: false}}
       />
 
