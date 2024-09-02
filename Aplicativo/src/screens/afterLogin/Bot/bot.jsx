@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../constants/afterLogin/styleBot';
+import styles from './styleBot';
 import { SafeAreaView, View, ScrollView, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 

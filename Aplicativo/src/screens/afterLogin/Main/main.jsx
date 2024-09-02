@@ -1,20 +1,10 @@
 import React, { useContext } from 'react';
-import styles from '../../../constants/afterLogin/styleMain';
+import styles from './styleMain';
 import { SafeAreaView, ScrollView, View, Text, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { RoutineContext } from '../../../context/routineContext';
 
 export default function Main() {
     const navigation = useNavigation();
-    const { routines } = useContext(RoutineContext);
-
-    const groupedRoutines = routines.reduce((acc, routine) => {
-        if (!acc[routine.type]) {
-            acc[routine.type] = [];
-        }
-        acc[routine.type].push({ exercise: routine.exercise, subtitle: routine.subtitle });
-        return acc;
-    }, {});
 
     return (
         <SafeAreaView style={styles.container}>
@@ -37,17 +27,6 @@ export default function Main() {
 
                 <View style={styles.rotineListBox}>
                     <ScrollView style={styles.rotineList}>
-                        {Object.keys(groupedRoutines).map((type, index) => (
-                            <View key={index}>
-                                <Text style={styles.rotineListTitle}>{type}</Text>
-                                {groupedRoutines[type].map((routine, subIndex) => (
-                                    <View key={subIndex} style={styles.exerciseList}>
-                                        <Text style={styles.exerciseListTitle}>{routine.exercise}</Text>
-                                        <Text style={styles.exerciseListSubTitle}>{routine.subtitle}</Text>
-                                    </View>
-                                ))}
-                            </View>
-                        ))}
                     </ScrollView>
                 </View>
             </View>

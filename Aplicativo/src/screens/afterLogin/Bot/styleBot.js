@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { width, height} from '../dimensions';
+import { width, height} from '../../../constants/dimensions';
 
 const styles = StyleSheet.create({
 
@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#fff',
   },
+
   BackgroundImage: {
     width: '100%',
     height: '100%',
@@ -25,6 +26,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
   },
+
   headerTitle: {
     fontSize: 40,
     color: '#fff',
@@ -37,6 +39,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   notificationImage: {
     width: '100%',
     height: '100%',
@@ -60,10 +63,12 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
   },
+
   botImage: {
     width: 50,
     height: 50,
   },
+
   botText: {
     fontSize: 20,
     fontWeight: 'bold',
@@ -89,7 +94,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     display: 'flex',
     flexDirection: 'row',
-
   },
 
   GeminiInput: {
@@ -112,6 +116,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#1179e2',
   },
+
   GeminiButtonText: {
     fontSize: 20,
     fontWeight: 'bold',
@@ -145,6 +150,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   footerButtonHome: {
     width: 50,
     height: '100%',
@@ -152,6 +158,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   footerButtonConfg: {
     width: 50,
     height: '100%',
@@ -159,11 +166,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   footerButtonsImage: {
     width: '100%',
     height: '90%',
     borderRadius: 25,
-  }
+  },
 });
 
 export default styles;

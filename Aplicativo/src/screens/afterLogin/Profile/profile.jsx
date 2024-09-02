@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { SafeAreaView, ScrollView, View, Text, TouchableOpacity, Image } from 'react-native';
+import { SafeAreaView, View, Text, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { getAuth, signOut, onAuthStateChanged } from '@firebase/auth';
-import styles from '../../../constants/afterLogin/styleProfile';
+import styles from './styleProfile';
 import { app } from '../../../components/confg';
 
 export default function Profile() {

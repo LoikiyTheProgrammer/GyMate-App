@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { width, height } from '../dimensions';
+import { width, height } from '../../../constants/dimensions';
 
 const styles = StyleSheet.create({
     container: {
@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#fff',
     },
+
     BackgroundImage: {
         width: '100%',
         height: '100%',
@@ -24,6 +25,7 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
     },
+
     headerTitle: {
         fontSize: 40,
         color: '#fff',
@@ -36,6 +38,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+
     notificationImage: {
         width: '100%',
         height: '100%',
@@ -49,48 +52,63 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
 
-    logoutBox: {
+    nav: {
         width: '90%',
-        height: width*0.9,
-        padding: '5%',
+        height: '10%',
+        marginBottom: '5%',
+        paddingHorizontal: '5%',
+        borderWidth: 4,
+        borderRadius: 10,
+        borderColor: '#1179e3',
+        alignItems: 'center',
+        justifyContent: 'center',
+        justifyContent: 'space-between',
+        display: 'flex',
+        flexDirection: 'row',
+        backgroundColor: '#fff',
+    },
+
+    navText: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#1179e2',
+    },
+
+    navButtonBot: {
+        width: 50,
+        height: 50,
+        borderWidth: 4,
+        borderRadius: 25,
+        borderColor: '#1179e2',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#1179e2',
+    },
+
+    navButtonBotImage: {
+        width: '80%',
+        height: '80%',
+        borderRadius: 10,
+    },
+
+    rotineListBox: {
+        width: '90%',
+        height: '80%',
         borderWidth: 4,
         borderRadius: 10,
         borderColor: '#1179e2',
         alignItems: 'center',
         justifyContent: 'center',
-        justifyContent: 'space-between',
-        display: 'flex',
-        flexDirection: 'column',
         backgroundColor: '#fff',
     },
-    profileImage: {
-        width: '60%',
-        height: '60%',
-    },
-    emailText: {
-        width: '90%',
-        textAlign: 'center',
-        fontSize: 20,
-        fontWeight: 'bold',
-        color: '#000',
-    },
 
-    buttonLogout: {
-        width: '90%',
-        height: '20%',
-        marginBottom: '1%',
-        borderWidth: 4,
+    rotineList: {
+        width: '100%',
+        height: '100%',
+        paddingLeft: '10%',
         borderRadius: 10,
-        borderColor: '#000',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: 'red',
-      },
-      buttonLogoutText: {
-        fontSize: 20,
-        fontWeight: 'bold',
-        color: '#fff',
-      },
+        backgroundColor: '#fff',
+    },
 
     footer: {
         width: '100%',
@@ -111,6 +129,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+
     footerButtonHome: {
         width: 50,
         height: '100%',
@@ -118,6 +137,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+
     footerButtonConfg: {
         width: 50,
         height: '100%',
@@ -125,11 +145,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+
     footerButtonsImage: {
         width: '100%',
         height: '90%',
         borderRadius: 25,
-    }
+    },
 });
 
 export default styles;

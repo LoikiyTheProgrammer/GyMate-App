@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { width, height} from '../dimensions'
+import { width, height} from '../../../constants/dimensions'
 
 const styles = StyleSheet.create({
   container: {
@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#fff',
   },
+
   BackgroundImage: {
     width: '100%',
     height: '100%',
@@ -20,6 +21,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   headerBox: {
     width: '80%',
     height: width*0.8,
@@ -30,11 +32,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#fff',
   },
+
   headerText: {
     fontSize: 80,
     textAlign: 'center',
     color: '#1179e2',
   },
+
   headerSubText: {
     fontSize: 20,
     textAlign: 'center',
@@ -47,6 +51,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-end',
   },
+
   welcomeText: {
     fontSize: 40,
     textAlign: 'center',
@@ -71,6 +76,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#fff',
   },
+
   navButtonSignInText: {
     fontSize: 25,
     fontWeight: 'bold',
@@ -88,6 +94,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#fff',
   },
+
   navButtonSignUpText: {
     fontSize: 25,
     fontWeight: 'bold',
@@ -101,6 +108,7 @@ const styles = StyleSheet.create({
   //   alignItems: 'center',
   //   justifyContent: 'center',
   // },
+  // 
   // navButtonCRUDText: {
   //   fontSize: 25,
   //   fontWeight: 'bold',

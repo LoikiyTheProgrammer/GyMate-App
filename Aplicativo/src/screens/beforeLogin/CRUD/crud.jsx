@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from '../../../constants/beforeLogin/styleCRUD';
+import styles from './styleCRUD';
 import { SafeAreaView, View, Text, TextInput, Pressable, FlatList } from 'react-native';
 import { collection, doc, getDocs, updateDoc, deleteDoc } from 'firebase/firestore';
 import { firebaseBD } from '../../../components/confg';

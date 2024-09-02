@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../../../constants/beforeLogin/styleSignUp';
+import styles from './styleSignUp';
 import { SafeAreaView, View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { getAuth, createUserWithEmailAndPassword } from '@firebase/auth';

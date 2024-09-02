@@ -1,12 +1,12 @@
 import { StyleSheet } from 'react-native';
-import { width, height} from '../dimensions';
+import { width, height} from '../../../constants/dimensions';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#1179e2',
+    backgroundColor: '#fff',
   },
 
   header: {
@@ -16,15 +16,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   headerText: {
     fontSize: 80,
+    color: '#1179e2',
     textAlign: 'center',
-    color: '#fff',
   },
+
   headerSubText: {
     fontSize: 20,
+    color: '#1179e2',
     textAlign: 'center',
-    color: '#fff',
   },
 
   main: {
@@ -41,28 +43,41 @@ const styles = StyleSheet.create({
     paddingLeft: '5%',
     borderWidth: 4,
     borderRadius: 25,
-    borderColor: '#fff',
+    borderColor: '#1179e2',
     fontSize: 20,
-    color: '#fff',
-    backgroundColor: '#1179e2',
+    color: '#1179e2',
+    backgroundColor: '#fff',
   },
 
-  buttonSignUp: {
+  buttonForgot: {
+    width: '80%',
+    height: 'auto',
+    margin: '1%',
+  },
+
+  buttonForgotText: {
+    fontSize: 20,
+    color: '#1179e2',
+  },
+
+  buttonSignIn: {
     width: '80%',
     height: '18%',
     margin: '1%',
     borderWidth: 4,
     borderRadius: 25,
-    borderColor: '#fff',
+    borderColor: '#1179e2',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#1179e2',
   },
-  buttonSignUpText: {
+
+  buttonSignInText: {
     fontSize: 25,
     fontWeight: 'bold',
     color: '#fff',
   },
+
   buttonImage: {
     width: '100%',
     height: '100%',
@@ -74,15 +89,16 @@ const styles = StyleSheet.create({
     width: '40%',
     height: '18%',
     margin: '1%',
-    borderRadius: 25,
+    borderRadius: 20,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#1179e2',
   },
+
   buttonBackText: {
     fontSize: 25,
     fontWeight: 'bold',
-    color: '#1179e2',
+    color: '#fff',
   },
 
   nav: {
@@ -91,29 +107,31 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   navText: {
     fontSize: 25,
-    color: '#fff',
+    color: '#1179e2',
   },
 
-  navButtonSignIn: {
+  navButtonSignUp: {
     width: 'auto',
     height: 'auto',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  navButtonSignInText: {
+
+  navButtonSignUpText: {
     fontSize: 25,
     fontWeight: 'bold',
-    color: '#fff',
+    color: '#1179e2',
   },
-
+  
   footer: {
     width: '100%',
     height: '5%',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#1179e2',
   },
 });
 

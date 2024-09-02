@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../constants/beforeLogin/styleHome';
+import styles from './styleHome';
 import { SafeAreaView, View, Text, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
@@ -30,11 +30,7 @@ export default function Home() {
                     <Text style={styles.navButtonSignUpText}>REGISTRAR-SE</Text>
                 </TouchableOpacity>
 
-                {/* <TouchableOpacity style={styles.navButtonSignUp} onPress={ () => navigation.navigate('GyMate Auth')}>
-                    <Text style={styles.navButtonSignUpText}>SING-IN/UP</Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity style={styles.navButtonCRUD} onPress={ () => navigation.navigate('GyMate CRUD')}>
+                {/* <TouchableOpacity style={styles.navButtonCRUD} onPress={ () => navigation.navigate('GyMate CRUD')}>
                     <Text style={styles.navButtonCRUDText}>TELA DO CRUD</Text>
                 </TouchableOpacity> */}
             </View>

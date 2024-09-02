@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../../../constants/beforeLogin/styleSignIn';
+import styles from './styleSignIn';
 import { SafeAreaView, View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { getAuth, signInWithEmailAndPassword } from '@firebase/auth';
