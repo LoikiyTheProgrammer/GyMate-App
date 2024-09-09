@@ -54,10 +54,10 @@ const styles = StyleSheet.create({
 
     logoutBox: {
         width: '90%',
-        height: width*0.9,
-        padding: '5%',
-        borderWidth: 4,
-        borderRadius: 10,
+        height: '90%',
+        paddingVertical: '5%',
+        borderWidth: 2,
+        borderRadius: 20,
         borderColor: '#1179e2',
         alignItems: 'center',
         justifyContent: 'center',
@@ -66,13 +66,13 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         backgroundColor: '#fff',
     },
+
     profileImage: {
-        width: '60%',
-        height: '60%',
+        width: 200,
+        height: 200,
     },
 
     emailText: {
-        width: '90%',
         textAlign: 'center',
         fontSize: 20,
         fontWeight: 'bold',
@@ -81,10 +81,9 @@ const styles = StyleSheet.create({
 
     buttonLogout: {
         width: '90%',
-        height: '20%',
-        marginBottom: '1%',
-        borderWidth: 4,
-        borderRadius: 10,
+        height: 60,
+        borderWidth: 2,
+        borderRadius: 20,
         borderColor: '#000',
         alignItems: 'center',
         justifyContent: 'center',
@@ -100,44 +99,44 @@ const styles = StyleSheet.create({
     footer: {
         width: '100%',
         height: '5%',
-        paddingHorizontal: '5%',
+        paddingHorizontal: '10%',
         alignItems: 'center',
         justifyContent: 'center',
         justifyContent: 'space-between',
         display: 'flex',
         flexDirection: 'row',
         backgroundColor: '#1179e2',
-    },
-
-    footerButtonChat: {
-        width: 50,
-        height: '100%',
-        borderRadius: 25,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-
-    footerButtonHome: {
-        width: 50,
-        height: '100%',
-        borderRadius: 25,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-
-    footerButtonConfg: {
-        width: 50,
-        height: '100%',
-        borderRadius: 25,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-
-    footerButtonsImage: {
-        width: '100%',
-        height: '90%',
-        borderRadius: 25,
-    },
+      },
+    
+      footerButtonChat: {
+          width: 50,
+          height: '90%',
+          borderRadius: 25,
+          alignItems: 'center',
+          justifyContent: 'center',
+      },
+    
+      footerButtonHome: {
+          width: 50,
+          height: '90%',
+          borderRadius: 25,
+          alignItems: 'center',
+          justifyContent: 'center',
+      },
+    
+      footerButtonConfg: {
+          width: 50,
+          height: '90%',
+          borderRadius: 25,
+          alignItems: 'center',
+          justifyContent: 'center',
+      },
+    
+      footerButtonsImage: {
+          width: '100%',
+          height: '100%',
+          borderRadius: 25,
+      },
 });
 
 export default styles;

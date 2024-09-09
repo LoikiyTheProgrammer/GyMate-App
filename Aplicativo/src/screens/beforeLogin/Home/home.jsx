@@ -18,20 +18,20 @@ export default function Home() {
             </View>
 
             <View style={styles.welcome}>
-                <Text style={styles.welcomeText}>BEM VINDO</Text>
+                <Text style={styles.welcomeText}>Bem vindo</Text>
             </View>
 
             <View style={styles.nav}>
                 <TouchableOpacity style={styles.navButtonSignIn} onPress={ () => navigation.navigate('GyMate Sign-in')}>
-                    <Text style={styles.navButtonSignInText}>LOGIN</Text>
+                    <Text style={styles.navButtonSignInText}>Login</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.navButtonSignUp} onPress={ () => navigation.navigate('GyMate Sign-up')}>
-                    <Text style={styles.navButtonSignUpText}>REGISTRAR-SE</Text>
+                    <Text style={styles.navButtonSignUpText}>Registrar-se</Text>
                 </TouchableOpacity>
 
                 {/* <TouchableOpacity style={styles.navButtonCRUD} onPress={ () => navigation.navigate('GyMate CRUD')}>
-                    <Text style={styles.navButtonCRUDText}>TELA DO CRUD</Text>
+                    <Text style={styles.navButtonCRUDText}>CRUD</Text>
                 </TouchableOpacity> */}
             </View>
         </SafeAreaView>

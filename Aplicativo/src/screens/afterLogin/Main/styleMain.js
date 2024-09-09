@@ -54,11 +54,11 @@ const styles = StyleSheet.create({
 
     nav: {
         width: '90%',
-        height: '10%',
+        height: 60,
         marginBottom: '5%',
-        paddingHorizontal: '5%',
-        borderWidth: 4,
-        borderRadius: 10,
+        paddingHorizontal: '1%',
+        borderWidth: 2,
+        borderRadius: 20,
         borderColor: '#1179e3',
         alignItems: 'center',
         justifyContent: 'center',
@@ -77,8 +77,7 @@ const styles = StyleSheet.create({
     navButtonBot: {
         width: 50,
         height: 50,
-        borderWidth: 4,
-        borderRadius: 25,
+        borderRadius: 20,
         borderColor: '#1179e2',
         alignItems: 'center',
         justifyContent: 'center',
@@ -88,14 +87,13 @@ const styles = StyleSheet.create({
     navButtonBotImage: {
         width: '80%',
         height: '80%',
-        borderRadius: 10,
     },
 
     rotineListBox: {
         width: '90%',
         height: '80%',
-        borderWidth: 4,
-        borderRadius: 10,
+        borderWidth: 2,
+        borderRadius: 20,
         borderColor: '#1179e2',
         alignItems: 'center',
         justifyContent: 'center',
@@ -106,14 +104,14 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         paddingLeft: '10%',
-        borderRadius: 10,
+        borderRadius: 20,
         backgroundColor: '#fff',
     },
 
     footer: {
         width: '100%',
         height: '5%',
-        paddingHorizontal: '5%',
+        paddingHorizontal: '10%',
         alignItems: 'center',
         justifyContent: 'center',
         justifyContent: 'space-between',
@@ -124,7 +122,7 @@ const styles = StyleSheet.create({
 
     footerButtonChat: {
         width: 50,
-        height: '100%',
+        height: '90%',
         borderRadius: 25,
         alignItems: 'center',
         justifyContent: 'center',
@@ -132,7 +130,7 @@ const styles = StyleSheet.create({
 
     footerButtonHome: {
         width: 50,
-        height: '100%',
+        height: '90%',
         borderRadius: 25,
         alignItems: 'center',
         justifyContent: 'center',
@@ -140,7 +138,7 @@ const styles = StyleSheet.create({
 
     footerButtonConfg: {
         width: 50,
-        height: '100%',
+        height: '90%',
         borderRadius: 25,
         alignItems: 'center',
         justifyContent: 'center',
@@ -148,7 +146,7 @@ const styles = StyleSheet.create({
 
     footerButtonsImage: {
         width: '100%',
-        height: '90%',
+        height: '100%',
         borderRadius: 25,
     },
 });

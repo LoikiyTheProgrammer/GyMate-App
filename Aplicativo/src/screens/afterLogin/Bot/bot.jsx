@@ -24,6 +24,10 @@ export default function Bot() {
                 </View>
 
                 <View style={styles.rotineListBox}>
+                    <ScrollView style={styles.GeminiAnswer}>
+                        
+                    </ScrollView>
+
                     <View style={styles.GeminiBox}>
                         <TextInput
                             style={styles.GeminiInput}
@@ -32,13 +36,9 @@ export default function Bot() {
                         />
 
                         <TouchableOpacity style={styles.GeminiButton}>
-                            <Text style={styles.GeminiButtonText}>Enter</Text>
+                            <Text style={styles.GeminiButtonText}>Enviar</Text>
                         </TouchableOpacity>
                     </View>
-
-                    <ScrollView style={styles.GeminiAnswer}>
-                        
-                    </ScrollView>
                 </View>
             </View>
 
@@ -48,7 +48,7 @@ export default function Bot() {
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.footerButtonHome} onPress={() => navigation.navigate('GyMate Main')}>
-                    <Image style={styles.footerButtonsImage} source={require('../../../assets/Return-Icon.png')} />
+                    <Image style={styles.footerButtonsImage} source={require('../../../assets/Home-Icon.png')} />
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.footerButtonConfg} onPress={() => navigation.navigate('GyMate Profile')}>

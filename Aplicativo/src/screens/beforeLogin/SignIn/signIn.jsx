@@ -53,18 +53,18 @@ export default function SignIn() {
 
                 <TouchableOpacity style={styles.buttonSignIn} onPress={handleSignIn}>
                     <Image style={styles.buttonImage} source={require('../../../assets/Fundo-GyMate-90º.png')} />
-                    <Text style={styles.buttonSignInText}>ENTRAR</Text>
+                    <Text style={styles.buttonSignInText}>Entrar</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.buttonBack} onPress={() => navigation.navigate('GyMate')}>
-                    <Text style={styles.buttonBackText}>VOLTAR</Text>
+                    <Text style={styles.buttonBackText}>Voltar</Text>
                 </TouchableOpacity>
             </View>
 
             <View style={styles.nav}>
                 <Text style={styles.navText}>Ainda não possui uma conta?</Text>
                 <TouchableOpacity style={styles.navButtonSignUp} onPress={() => navigation.navigate('GyMate Sign-up')}>
-                    <Text style={styles.navButtonSignUpText}>CLIQUE AQUI</Text>
+                    <Text style={styles.navButtonSignUpText}>Clique aqui!</Text>
                 </TouchableOpacity>
             </View>
 

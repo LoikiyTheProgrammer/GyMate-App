@@ -38,11 +38,11 @@ const styles = StyleSheet.create({
 
   input: {
     width: '80%',
-    height: '18%',
+    height: 60,
     margin: '1%',
     paddingLeft: '5%',
-    borderWidth: 4,
-    borderRadius: 25,
+    borderWidth: 2,
+    borderRadius: 20,
     borderColor: '#fff',
     fontSize: 20,
     color: '#fff',
@@ -51,10 +51,10 @@ const styles = StyleSheet.create({
 
   buttonSignUp: {
     width: '80%',
-    height: '18%',
+    height: 60,
     margin: '1%',
-    borderWidth: 4,
-    borderRadius: 25,
+    borderWidth: 2,
+    borderRadius: 20,
     borderColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
@@ -70,15 +70,15 @@ const styles = StyleSheet.create({
   buttonImage: {
     width: '100%',
     height: '100%',
-    borderRadius: 20,
+    borderRadius: 18,
     position: 'absolute',
   },
 
   buttonBack: {
     width: '40%',
-    height: '18%',
+    height: 60,
     margin: '1%',
-    borderRadius: 25,
+    borderRadius: 20,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#fff',

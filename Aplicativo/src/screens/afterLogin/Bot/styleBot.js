@@ -56,7 +56,6 @@ const styles = StyleSheet.create({
   welcome: {
     width: '90%',
     height: '10%',
-    paddingHorizontal: '5%',
     alignItems: 'center',
     justifyContent: 'center',
     justifyContent: 'space-between',
@@ -76,20 +75,27 @@ const styles = StyleSheet.create({
   },
 
   rotineListBox: {
-    width: '90%',
-    height: '80%',
-    paddingVertical: '5%',
-    borderWidth: 4,
-    borderRadius: 10,
+    width: '100%',
+    height: '90%',
     borderColor: '#1179e2',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  GeminiAnswer: {
+    width: '90%',
+    height: '10%',
+    marginVertical: '5%',
+    borderWidth: 2,
+    borderRadius: 20,
+    borderColor: '#1179e2',
     backgroundColor: '#fff',
   },
 
   GeminiBox: {
-    width: '80%',
-    height: '20%',
+    width: '90%',
+    height: 'auto',
+    marginVertical: '5%',
     justifyContent: 'center',
     justifyContent: 'space-between',
     display: 'flex',
@@ -97,11 +103,12 @@ const styles = StyleSheet.create({
   },
 
   GeminiInput: {
-    width: '75%',
-    height: '50%',
+    width: '80%',
+    height: 60,
     paddingLeft: '5%',
     borderWidth: 2,
-    borderRadius: 5,
+    borderTopLeftRadius: 20,
+    borderBottomLeftRadius: 20,
     borderColor: '#1179e2',
     fontSize: 20,
     color: '#1179e2',
@@ -110,8 +117,9 @@ const styles = StyleSheet.create({
 
   GeminiButton: {
     width: '20%',
-    height: '50%',
-    borderRadius: 5,
+    height: 60,
+    borderTopRightRadius: 20,
+    borderBottomRightRadius: 20,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#1179e2',
@@ -123,18 +131,10 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
 
-  GeminiAnswer: {
-    width: '80%',
-    height: '10%',
-    borderWidth: 2,
-    borderRadius: 5,
-    borderColor: '#1179e2',
-  },
-
   footer: {
     width: '100%',
     height: '5%',
-    paddingHorizontal: '5%',
+    paddingHorizontal: '10%',
     alignItems: 'center',
     justifyContent: 'center',
     justifyContent: 'space-between',
@@ -144,33 +144,33 @@ const styles = StyleSheet.create({
   },
 
   footerButtonChat: {
-    width: 50,
-    height: '100%',
-    borderRadius: 25,
-    alignItems: 'center',
-    justifyContent: 'center',
+      width: 50,
+      height: '90%',
+      borderRadius: 25,
+      alignItems: 'center',
+      justifyContent: 'center',
   },
 
   footerButtonHome: {
-    width: 50,
-    height: '100%',
-    borderRadius: 25,
-    alignItems: 'center',
-    justifyContent: 'center',
+      width: 50,
+      height: '90%',
+      borderRadius: 25,
+      alignItems: 'center',
+      justifyContent: 'center',
   },
 
   footerButtonConfg: {
-    width: 50,
-    height: '100%',
-    borderRadius: 25,
-    alignItems: 'center',
-    justifyContent: 'center',
+      width: 50,
+      height: '90%',
+      borderRadius: 25,
+      alignItems: 'center',
+      justifyContent: 'center',
   },
 
   footerButtonsImage: {
-    width: '100%',
-    height: '90%',
-    borderRadius: 25,
+      width: '100%',
+      height: '100%',
+      borderRadius: 25,
   },
 });
 

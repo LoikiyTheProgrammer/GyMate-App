@@ -42,10 +42,12 @@ export default function Profile() {
 
             <View style={styles.main}>
                 <View style={styles.logoutBox}>
-                    <Image style={styles.profileImage} source={require('../../../assets/Profile-Placeholder.png')}/>
-                    <Text style={styles.emailText}>{user?.email}</Text>
+                    <View>
+                        <Image style={styles.profileImage} source={require('../../../assets/Profile-Placeholder.png')}/>
+                        <Text style={styles.emailText}>{user?.email}</Text>
+                    </View>
                     <TouchableOpacity style={styles.buttonLogout} onPress={handleLogout}>
-                        <Text style={styles.buttonLogoutText}>SAIR DA CONTA</Text>
+                        <Text style={styles.buttonLogoutText}>Sair da conta</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -56,7 +58,7 @@ export default function Profile() {
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.footerButtonHome} onPress={() => navigation.navigate('GyMate Main')}>
-                    <Image style={styles.footerButtonsImage} source={require('../../../assets/Return-Icon.png')}/>
+                    <Image style={styles.footerButtonsImage} source={require('../../../assets/Home-Icon.png')}/>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.footerButtonConfg} onPress={() => navigation.navigate('GyMate Profile')}>

@@ -19,14 +19,14 @@ const styles = StyleSheet.create({
 
   headerText: {
     fontSize: 80,
-    color: '#1179e2',
     textAlign: 'center',
+    color: '#1179e2',
   },
 
   headerSubText: {
     fontSize: 20,
-    color: '#1179e2',
     textAlign: 'center',
+    color: '#1179e2',
   },
 
   main: {
@@ -38,11 +38,11 @@ const styles = StyleSheet.create({
 
   input: {
     width: '80%',
-    height: '18%',
+    height: 60,
     margin: '1%',
     paddingLeft: '5%',
-    borderWidth: 4,
-    borderRadius: 25,
+    borderWidth: 2,
+    borderRadius: 20,
     borderColor: '#1179e2',
     fontSize: 20,
     color: '#1179e2',
@@ -62,10 +62,10 @@ const styles = StyleSheet.create({
 
   buttonSignIn: {
     width: '80%',
-    height: '18%',
+    height: 60,
     margin: '1%',
-    borderWidth: 4,
-    borderRadius: 25,
+    borderWidth: 2,
+    borderRadius: 20,
     borderColor: '#1179e2',
     alignItems: 'center',
     justifyContent: 'center',
@@ -81,13 +81,13 @@ const styles = StyleSheet.create({
   buttonImage: {
     width: '100%',
     height: '100%',
-    borderRadius: 20,
+    borderRadius: 18,
     position: 'absolute',
   },
 
   buttonBack: {
     width: '40%',
-    height: '18%',
+    height: 60,
     margin: '1%',
     borderRadius: 20,
     alignItems: 'center',

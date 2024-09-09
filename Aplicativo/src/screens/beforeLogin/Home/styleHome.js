@@ -17,16 +17,16 @@ const styles = StyleSheet.create({
 
   header: {
     width: '100%',
-    height: '50%',
+    height: '40%',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
   headerBox: {
     width: '80%',
-    height: width*0.8,
-    borderWidth: 4,
-    borderRadius: 25,
+    height: 200,
+    borderWidth: 2,
+    borderRadius: 20,
     borderColor: '#1179e2',
     alignItems: 'center',
     justifyContent: 'center',
@@ -46,10 +46,10 @@ const styles = StyleSheet.create({
   },
 
   welcome: {
-    width: '100%',
-    height: '10%',
+    width: '80%',
+    height: '20%',
     alignItems: 'center',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
   },
 
   welcomeText: {
@@ -67,10 +67,10 @@ const styles = StyleSheet.create({
 
   navButtonSignIn: {
     width: '80%',
-    height: '20%',
+    height: 60,
     margin: '1%',
-    borderWidth: 4,
-    borderRadius: 25,
+    borderWidth: 2,
+    borderRadius: 20,
     borderColor: '#1179e2',
     alignItems: 'center',
     justifyContent: 'center',
@@ -85,10 +85,10 @@ const styles = StyleSheet.create({
 
   navButtonSignUp: {
     width: '80%',
-    height: '20%',
+    height: 60,
     margin: '1%',
-    borderWidth: 4,
-    borderRadius: 25,
+    borderWidth: 2,
+    borderRadius: 20,
     borderColor: '#1179e2',
     alignItems: 'center',
     justifyContent: 'center',
@@ -100,20 +100,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#1179e2',
   },
-
-  // navButtonCRUD: {
-  //   width: 'auto',
-  //   height: 'auto',
-  //   margin: '1%',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  // },
-  // 
-  // navButtonCRUDText: {
-  //   fontSize: 25,
-  //   fontWeight: 'bold',
-  //   color: '#fff',
-  // },
 });
 
 export default styles;
