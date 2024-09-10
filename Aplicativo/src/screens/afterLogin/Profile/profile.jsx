@@ -41,7 +41,7 @@ export default function Profile() {
             </View>
 
             <View style={styles.main}>
-                <View style={styles.logoutBox}>
+                <View style={styles.divProfile}>
                     <View>
                         <Image style={styles.profileImage} source={require('../../../assets/Profile-Placeholder.png')}/>
                         <Text style={styles.emailText}>{user?.email}</Text>

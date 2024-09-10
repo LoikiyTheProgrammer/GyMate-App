@@ -16,11 +16,10 @@ const styles = StyleSheet.create({
     },
 
     header: {
-        width: '100%',
+        width: '90%',
         height: '10%',
-        paddingHorizontal: '5%',
+        marginTop: '10%',
         alignItems: 'center',
-        justifyContent: 'center',
         justifyContent: 'space-between',
         display: 'flex',
         flexDirection: 'row',
@@ -28,7 +27,9 @@ const styles = StyleSheet.create({
 
     headerTitle: {
         fontSize: 40,
+        fontWeight: 'light',
         color: '#fff',
+        textAlign: 'center',
     },
 
     buttonNotification: {
@@ -47,38 +48,37 @@ const styles = StyleSheet.create({
 
     main: {
         width: '100%',
-        height: '85%',
+        height: '80%',
         alignItems: 'center',
         justifyContent: 'center',
     },
 
     nav: {
         width: '90%',
-        height: 60,
-        marginBottom: '5%',
-        paddingHorizontal: '1%',
-        borderWidth: 2,
-        borderRadius: 20,
-        borderColor: '#1179e3',
+        height: '10%',
+        paddingHorizontal: '2%',
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
         alignItems: 'center',
-        justifyContent: 'center',
         justifyContent: 'space-between',
         display: 'flex',
         flexDirection: 'row',
-        backgroundColor: '#fff',
+        backgroundColor: '#1179e2',
     },
 
     navText: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: '#1179e2',
+        color: '#fff',
+        textAlign: 'center',
     },
 
     navButtonBot: {
         width: 50,
         height: 50,
+        borderWidth: 2,
         borderRadius: 20,
-        borderColor: '#1179e2',
+        borderColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#1179e2',
@@ -87,24 +87,20 @@ const styles = StyleSheet.create({
     navButtonBotImage: {
         width: '80%',
         height: '80%',
+        position: 'absolute',
     },
 
-    rotineListBox: {
+    divRotine: {
         width: '90%',
         height: '80%',
-        borderWidth: 2,
-        borderRadius: 20,
+        borderLeftWidth: 2,
+        borderRightWidth: 2,
+        borderBottomWidth: 2,
+        borderBottomLeftRadius: 20,
+        borderBottomRightRadius: 20,
         borderColor: '#1179e2',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#fff',
-    },
-
-    rotineList: {
-        width: '100%',
-        height: '100%',
-        paddingLeft: '10%',
-        borderRadius: 20,
         backgroundColor: '#fff',
     },
 

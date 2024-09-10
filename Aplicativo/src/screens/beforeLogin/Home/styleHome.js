@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native'
-import { width, height} from '../../../constants/dimensions'
+import { StyleSheet } from 'react-native';
+import { width, height} from '../../../constants/dimensions';
 
 const styles = StyleSheet.create({
   container: {
@@ -17,14 +17,19 @@ const styles = StyleSheet.create({
 
   header: {
     width: '100%',
+    height: '5%',
+  },
+
+  divLogo: {
+    width: '100%',
     height: '40%',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
-  headerBox: {
-    width: '80%',
-    height: 200,
+  logo: {
+    width: '90%',
+    height: '100%',
     borderWidth: 2,
     borderRadius: 20,
     borderColor: '#1179e2',
@@ -33,42 +38,45 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
 
-  headerText: {
+  logoText: {
     fontSize: 80,
-    textAlign: 'center',
+    fontWeight: 'light',
     color: '#1179e2',
+    textAlign: 'center',
   },
 
-  headerSubText: {
+  logoSubText: {
     fontSize: 20,
-    textAlign: 'center',
+    fontWeight: 'light',
     color: '#1179e2',
+    textAlign: 'center',
   },
 
   welcome: {
-    width: '80%',
-    height: '20%',
-    alignItems: 'center',
+    width: '100%',
+    height: '30%',
+    alignContent: 'center',
     justifyContent: 'center',
   },
 
   welcomeText: {
     fontSize: 40,
-    textAlign: 'center',
+    fontWeight: 'light',
     color: '#fff',
+    textAlign: 'center',
   },
 
   nav: {
     width: '100%',
-    height: '40%',
+    height: '20%',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
   navButtonSignIn: {
-    width: '80%',
+    width: '90%',
     height: 60,
-    margin: '1%',
+    margin: 5,
     borderWidth: 2,
     borderRadius: 20,
     borderColor: '#1179e2',
@@ -81,12 +89,13 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     color: '#1179e2',
+    textAlign: 'center',
   },
 
   navButtonSignUp: {
-    width: '80%',
+    width: '90%',
     height: 60,
-    margin: '1%',
+    margin: 5,
     borderWidth: 2,
     borderRadius: 20,
     borderColor: '#1179e2',
@@ -99,6 +108,12 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     color: '#1179e2',
+    textAlign: 'center',
+  },
+
+  footer: {
+    width: '100%',
+    height: '5%',
   },
 });
 

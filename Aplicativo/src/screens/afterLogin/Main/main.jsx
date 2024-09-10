@@ -25,9 +25,7 @@ export default function Main() {
                     </TouchableOpacity>
                 </View>
 
-                <View style={styles.rotineListBox}>
-                    <ScrollView style={styles.rotineList}>
-                    </ScrollView>
+                <View style={styles.divRotine}>
                 </View>
             </View>
 

@@ -16,11 +16,10 @@ const styles = StyleSheet.create({
     },
 
     header: {
-        width: '100%',
+        width: '90%',
         height: '10%',
-        paddingHorizontal: '5%',
+        marginTop: '10%',
         alignItems: 'center',
-        justifyContent: 'center',
         justifyContent: 'space-between',
         display: 'flex',
         flexDirection: 'row',
@@ -28,7 +27,9 @@ const styles = StyleSheet.create({
 
     headerTitle: {
         fontSize: 40,
+        fontWeight: 'light',
         color: '#fff',
+        textAlign: 'center',
     },
 
     buttonNotification: {
@@ -47,12 +48,12 @@ const styles = StyleSheet.create({
 
     main: {
         width: '100%',
-        height: '85%',
+        height: '80%',
         alignItems: 'center',
         justifyContent: 'center',
     },
 
-    logoutBox: {
+    divProfile: {
         width: '90%',
         height: '90%',
         paddingVertical: '5%',

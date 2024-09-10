@@ -24,9 +24,13 @@ export default function SignUp() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.headerText}>GyMate</Text>
-        <Text style={styles.headerSubText}>coloque seus dados de acesso para criar sua conta</Text>
+      <View style={styles.header}/>
+
+      <View style={styles.divLogo}>
+          <View style={styles.logo}>
+              <Text style={styles.logoText}>GyMate</Text>
+              <Text style={styles.logoSubText}>coloque seus dados de acesso para criar sua conta</Text>
+          </View>
       </View>
 
       <View style={styles.main}>

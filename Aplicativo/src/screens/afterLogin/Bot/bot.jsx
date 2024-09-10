@@ -21,24 +21,23 @@ export default function Bot() {
                 <View style={styles.welcome}>
                     <Image style={styles.botImage} source={require('../../../assets/AI-Icon.png')} />
                     <Text style={styles.botText}>O que você deseja exercitar?</Text>
+                    <Image style={styles.botImage} source={require('../../../assets/AI-Icon.png')} />
                 </View>
 
-                <View style={styles.rotineListBox}>
-                    <ScrollView style={styles.GeminiAnswer}>
-                        
-                    </ScrollView>
+                <View style={styles.divRotine}>
 
-                    <View style={styles.GeminiBox}>
-                        <TextInput
-                            style={styles.GeminiInput}
-                            placeholder='Digite aqui'
-                            placeholderTextColor={'#1179e2'}
-                        />
+                </View>
 
-                        <TouchableOpacity style={styles.GeminiButton}>
-                            <Text style={styles.GeminiButtonText}>Enviar</Text>
-                        </TouchableOpacity>
-                    </View>
+                <View style={styles.divGemini}>
+                    <TextInput
+                        style={styles.GeminiInput}
+                        placeholder='Digite aqui'
+                        placeholderTextColor={'#1179e2'}
+                    />
+
+                    <TouchableOpacity style={styles.GeminiButton}>
+                        <Text style={styles.GeminiButtonText}>Enviar</Text>
+                    </TouchableOpacity>
                 </View>
             </View>
 

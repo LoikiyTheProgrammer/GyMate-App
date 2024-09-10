@@ -11,22 +11,35 @@ const styles = StyleSheet.create({
 
   header: {
     width: '100%',
-    height: '30%',
-    paddingHorizontal: '10%',
+    height: '5%',
+  },
+
+  divLogo: {
+    width: '100%',
+    height: '20%',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
-  headerText: {
-    fontSize: 80,
-    textAlign: 'center',
-    color: '#fff',
+  logo: {
+    width: '90%',
+    height: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
-  headerSubText: {
-    fontSize: 20,
-    textAlign: 'center',
+  logoText: {
+    fontSize: 80,
+    fontWeight: 'light',
     color: '#fff',
+    textAlign: 'center',
+  },
+
+  logoSubText: {
+    fontSize: 20,
+    fontWeight: 'light',
+    color: '#fff',
+    textAlign: 'center',
   },
 
   main: {
@@ -37,22 +50,23 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    width: '80%',
+    width: '90%',
     height: 60,
-    margin: '1%',
+    margin: 5,
     paddingLeft: '5%',
     borderWidth: 2,
     borderRadius: 20,
     borderColor: '#fff',
     fontSize: 20,
+    fontWeight: 'light',
     color: '#fff',
     backgroundColor: '#1179e2',
   },
 
   buttonSignUp: {
-    width: '80%',
+    width: '90%',
     height: 60,
-    margin: '1%',
+    margin: 5,
     borderWidth: 2,
     borderRadius: 20,
     borderColor: '#fff',
@@ -75,9 +89,9 @@ const styles = StyleSheet.create({
   },
 
   buttonBack: {
-    width: '40%',
+    width: '45%',
     height: 60,
-    margin: '1%',
+    margin: 5,
     borderRadius: 20,
     alignItems: 'center',
     justifyContent: 'center',
@@ -88,11 +102,12 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     color: '#1179e2',
+    textAlign: 'center',
   },
 
   nav: {
     width: '100%',
-    height: '15%',
+    height: '20%',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -103,8 +118,6 @@ const styles = StyleSheet.create({
   },
 
   navButtonSignIn: {
-    width: 'auto',
-    height: 'auto',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -113,13 +126,12 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     color: '#fff',
+    textAlign: 'center',
   },
   
   footer: {
     width: '100%',
     height: '5%',
-    alignItems: 'center',
-    justifyContent: 'center',
     backgroundColor: '#fff',
   },
 });

@@ -10,10 +10,12 @@ export default function Home() {
         <SafeAreaView style={styles.container}>
             <Image style={styles.BackgroundImage} source={require('../../../assets/Fundo-GyMate.png')}/>
 
-            <View style={styles.header}>
-                <View style={styles.headerBox}>
-                    <Text style={styles.headerText}>GyMate</Text>
-                    <Text style={styles.headerSubText}>escolha o modo de acesso</Text>
+            <View style={styles.header}/>
+
+            <View style={styles.divLogo}>
+                <View style={styles.logo}>
+                    <Text style={styles.logoText}>GyMate</Text>
+                    <Text style={styles.logoSubText}>escolha o modo de acesso</Text>
                 </View>
             </View>
 
@@ -34,6 +36,8 @@ export default function Home() {
                     <Text style={styles.navButtonCRUDText}>CRUD</Text>
                 </TouchableOpacity> */}
             </View>
+
+            <View style={styles.footer}/>
         </SafeAreaView>
     );
 }

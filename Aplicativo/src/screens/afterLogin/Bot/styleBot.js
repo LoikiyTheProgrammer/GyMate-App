@@ -17,11 +17,10 @@ const styles = StyleSheet.create({
   },
 
   header: {
-    width: '100%',
+    width: '90%',
     height: '10%',
-    paddingHorizontal: '5%',
+    marginTop: '10%',
     alignItems: 'center',
-    justifyContent: 'center',
     justifyContent: 'space-between',
     display: 'flex',
     flexDirection: 'row',
@@ -29,7 +28,9 @@ const styles = StyleSheet.create({
 
   headerTitle: {
     fontSize: 40,
+    fontWeight: 'light',
     color: '#fff',
+    textAlign: 'center',
   },
 
   buttonNotification: {
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
 
   main: {
     width: '100%',
-    height: '85%',
+    height: '80%',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -57,47 +58,39 @@ const styles = StyleSheet.create({
     width: '90%',
     height: '10%',
     alignItems: 'center',
-    justifyContent: 'center',
     justifyContent: 'space-between',
     display: 'flex',
     flexDirection: 'row',
   },
 
   botImage: {
-    width: 50,
-    height: 50,
+    width: 25,
+    height: 25,
   },
 
   botText: {
     fontSize: 20,
     fontWeight: 'bold',
     color: '#fff',
+    textAlign: 'center',
   },
 
-  rotineListBox: {
-    width: '100%',
-    height: '90%',
-    borderColor: '#1179e2',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  GeminiAnswer: {
+  divRotine: {
     width: '90%',
-    height: '10%',
-    marginVertical: '5%',
+    height: '60%',
     borderWidth: 2,
     borderRadius: 20,
     borderColor: '#1179e2',
+    alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: '#fff',
   },
 
-  GeminiBox: {
+  divGemini: {
     width: '90%',
-    height: 'auto',
-    marginVertical: '5%',
+    height: '20%',
+    alignItems: 'flex-end',
     justifyContent: 'center',
-    justifyContent: 'space-between',
     display: 'flex',
     flexDirection: 'row',
   },
@@ -129,6 +122,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     color: '#fff',
+    textAlign: 'center',
   },
 
   footer: {

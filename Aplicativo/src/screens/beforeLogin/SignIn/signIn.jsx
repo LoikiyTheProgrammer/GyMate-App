@@ -24,9 +24,13 @@ export default function SignIn() {
 
     return (
         <SafeAreaView style={styles.container}>
-            <View style={styles.header}>
-                <Text style={styles.headerText}>GyMate</Text>
-                <Text style={styles.headerSubText}>coloque seus dados de acesso para iniciar sua sessão</Text>
+            <View style={styles.header}/>
+
+            <View style={styles.divLogo}>
+                <View style={styles.logo}>
+                    <Text style={styles.logoText}>GyMate</Text>
+                    <Text style={styles.logoSubText}>coloque seus dados de acesso para iniciar sua sessão</Text>
+                </View>
             </View>
 
             <View style={styles.main}>
@@ -53,7 +57,7 @@ export default function SignIn() {
 
                 <TouchableOpacity style={styles.buttonSignIn} onPress={handleSignIn}>
                     <Image style={styles.buttonImage} source={require('../../../assets/Fundo-GyMate-90º.png')} />
-                    <Text style={styles.buttonSignInText}>Entrar</Text>
+                    <Text style={styles.buttonSignInText}>Entrar na conta</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.buttonBack} onPress={() => navigation.navigate('GyMate')}>
