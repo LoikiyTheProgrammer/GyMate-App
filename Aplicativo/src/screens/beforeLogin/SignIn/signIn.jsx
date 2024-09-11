@@ -56,7 +56,7 @@ export default function SignIn() {
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.buttonSignIn} onPress={handleSignIn}>
-                    <Image style={styles.buttonImage} source={require('../../../assets/Fundo-GyMate-90º.png')} />
+                    <Image style={styles.buttonImage} source={require('../../../assets/imgs/Fundo-GyMate-90º.png')} />
                     <Text style={styles.buttonSignInText}>Entrar na conta</Text>
                 </TouchableOpacity>
 

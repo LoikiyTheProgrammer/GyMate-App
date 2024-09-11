@@ -52,7 +52,7 @@ export default function SignUp() {
         />
 
         <TouchableOpacity style={styles.buttonSignUp} onPress={handleSignUp}>
-          <Image style={styles.buttonImage} source={require('../../../assets/Fundo-GyMate-90º.png')} />
+          <Image style={styles.buttonImage} source={require('../../../assets/imgs/Fundo-GyMate-90º.png')} />
           <Text style={styles.buttonSignUpText}>Criar conta</Text>
         </TouchableOpacity>
 

@@ -8,7 +8,7 @@ export default function Home() {
 
     return (
         <SafeAreaView style={styles.container}>
-            <Image style={styles.BackgroundImage} source={require('../../../assets/Fundo-GyMate.png')}/>
+            <Image style={styles.BackgroundImage} source={require('../../../assets/imgs/Fundo-GyMate.png')}/>
 
             <View style={styles.header}/>
 
