@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
 
     headerTitle: {
         fontSize: 40,
-        fontWeight: 'light',
+        fontFamily: 'Lexend Bold',
         color: '#fff',
         textAlign: 'center',
     },
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     emailText: {
         textAlign: 'center',
         fontSize: 20,
-        fontWeight: 'bold',
+        fontFamily: 'Lexend Bold',
         color: '#000',
     },
 
@@ -92,8 +92,8 @@ const styles = StyleSheet.create({
     },
 
     buttonLogoutText: {
-        fontSize: 20,
-        fontWeight: 'bold',
+        fontSize: 25,
+        fontFamily: 'Lexend Bold',
         color: '#fff',
     },
 

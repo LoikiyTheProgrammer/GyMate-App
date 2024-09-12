@@ -30,14 +30,14 @@ const styles = StyleSheet.create({
 
   logoText: {
     fontSize: 80,
-    fontWeight: 'light',
+    fontFamily: 'Lexend Bold',
     color: '#fff',
     textAlign: 'center',
   },
 
   logoSubText: {
     fontSize: 20,
-    fontWeight: 'light',
+    fontFamily: 'Lexend Regular',
     color: '#fff',
     textAlign: 'center',
   },
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     borderColor: '#fff',
     fontSize: 20,
-    fontWeight: 'light',
+    fontFamily: 'Lexend Regular',
     color: '#fff',
     backgroundColor: '#1179e2',
   },
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
 
   buttonSignUpText: {
     fontSize: 25,
-    fontWeight: 'bold',
+    fontFamily: 'Lexend Bold',
     color: '#fff',
   },
 
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
 
   buttonBackText: {
     fontSize: 25,
-    fontWeight: 'bold',
+    fontFamily: 'Lexend Bold',
     color: '#1179e2',
     textAlign: 'center',
   },
@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
 
   navButtonSignInText: {
     fontSize: 25,
-    fontWeight: 'bold',
+    fontFamily: 'Lexend Bold',
     color: '#fff',
     textAlign: 'center',
   },

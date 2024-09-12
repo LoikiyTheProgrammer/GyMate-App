@@ -40,14 +40,14 @@ const styles = StyleSheet.create({
 
   logoText: {
     fontSize: 80,
-    fontWeight: 'light',
+    fontFamily: 'Lexend Bold',
     color: '#1179e2',
     textAlign: 'center',
   },
 
   logoSubText: {
     fontSize: 20,
-    fontWeight: 'light',
+    fontFamily: 'Lexend Regular',
     color: '#1179e2',
     textAlign: 'center',
   },
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
 
   welcomeText: {
     fontSize: 40,
-    fontWeight: 'light',
+    fontFamily: 'Lexend Regular',
     color: '#fff',
     textAlign: 'center',
   },
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
 
   navButtonSignInText: {
     fontSize: 25,
-    fontWeight: 'bold',
+    fontFamily: 'Lexend Bold',
     color: '#1179e2',
     textAlign: 'center',
   },
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
 
   navButtonSignUpText: {
     fontSize: 25,
-    fontWeight: 'bold',
+    fontFamily: 'Lexend Bold',
     color: '#1179e2',
     textAlign: 'center',
   },

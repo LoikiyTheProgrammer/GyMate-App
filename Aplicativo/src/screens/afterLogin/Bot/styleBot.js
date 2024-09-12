@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
 
   headerTitle: {
     fontSize: 40,
-    fontWeight: 'light',
+    fontFamily: 'Lexend Bold',
     color: '#fff',
     textAlign: 'center',
   },
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
 
   botText: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontFamily: 'Lexend Bold',
     color: '#fff',
     textAlign: 'center',
   },
@@ -104,6 +104,7 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 20,
     borderColor: '#1179e2',
     fontSize: 20,
+    fontFamily: 'Lexend Regular',
     color: '#1179e2',
     backgroundColor: '#fff',
   },
@@ -120,7 +121,7 @@ const styles = StyleSheet.create({
 
   GeminiButtonText: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontFamily: 'Lexend Bold',
     color: '#fff',
     textAlign: 'center',
   },

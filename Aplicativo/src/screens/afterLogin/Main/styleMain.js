@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
 
     headerTitle: {
         fontSize: 40,
-        fontWeight: 'light',
+        fontFamily: 'Lexend Bold',
         color: '#fff',
         textAlign: 'center',
     },
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     nav: {
         width: '90%',
         height: '10%',
-        paddingHorizontal: '2%',
+        paddingHorizontal: '1%',
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
         alignItems: 'center',
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
 
     navText: {
         fontSize: 20,
-        fontWeight: 'bold',
+        fontFamily: 'Lexend Bold',
         color: '#fff',
         textAlign: 'center',
     },
