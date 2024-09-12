@@ -7,27 +7,27 @@ import { app } from '../../../components/confg';
 
 export default function Profile() {
     const navigation = useNavigation();
-    const [user, setUser] = useState(null);
 
-    const auth = getAuth(app);
+    const [user, setUser] = useState(null)
+    const auth = getAuth(app)
     
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
-            setUser(user);
-        });
+            setUser(user)
+        })
 
-        return () => unsubscribe();
-    }, [auth]);
+        return () => unsubscribe()
+    }, [auth])
 
     const handleLogout = async () => {
         try {
-            await signOut(auth);
-            console.log('User logged out successfully!');
-            navigation.navigate('GyMate');
+            await signOut(auth)
+            console.log('User logged out successfully!')
+            navigation.navigate('GyMate')
         } catch (error) {
-            console.error('Logout error:', error.message);
+            console.error('Logout error:', error.message)
         }
-    };
+    }
 
     return (
         <SafeAreaView style={styles.container}>
@@ -36,15 +36,15 @@ export default function Profile() {
             <View style={styles.header}>
                 <Text style={styles.headerTitle}>GyMate</Text>
                 <TouchableOpacity style={styles.buttonNotification}>
-                    <Image style={styles.notificationImage} source={require('../../../assets/imgs/Bell-Icon.png')}/>
+                    <Image style={styles.buttonNotificationImage} source={require('../../../assets/imgs/Bell-Icon.png')}/>
                 </TouchableOpacity>
             </View>
 
             <View style={styles.main}>
                 <View style={styles.divProfile}>
-                    <View>
+                    <View style={styles.profile}>
                         <Image style={styles.profileImage} source={require('../../../assets/imgs/Profile-Placeholder.png')}/>
-                        <Text style={styles.emailText}>{user?.email}</Text>
+                        <Text style={styles.profileText}>{user?.email}</Text>
                     </View>
                     <TouchableOpacity style={styles.buttonLogout} onPress={handleLogout}>
                         <Text style={styles.buttonLogoutText}>Sair da conta</Text>

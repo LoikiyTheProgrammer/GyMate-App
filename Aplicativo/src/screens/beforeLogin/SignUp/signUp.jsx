@@ -8,19 +8,19 @@ import { app } from '../../../components/confg';
 export default function SignUp() {
   const navigation = useNavigation();
 
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
   const handleSignUp = async () => {
-    const auth = getAuth(app);
+    const auth = getAuth(app)
     try {
-      await createUserWithEmailAndPassword(auth, email, password);
-      console.log('User created successfully!');
-      navigation.navigate('GyMate Main');
+      await createUserWithEmailAndPassword(auth, email, password)
+      console.log('User created successfully!')
+      navigation.navigate('GyMate Main')
     } catch (error) {
-      console.error('Authentication error:', error.message);
+      console.error('Authentication error:', error.message)
     }
-  };
+  }
 
   return (
     <SafeAreaView style={styles.container}>
@@ -35,7 +35,7 @@ export default function SignUp() {
 
       <View style={styles.main}>
         <TextInput
-          style={styles.input}
+          style={styles.mainInput}
           value={email}
           onChangeText={setEmail}
           placeholder='Digite seu e-mail'
@@ -43,7 +43,7 @@ export default function SignUp() {
           keyboardType='email-address'
         />
         <TextInput
-          style={styles.input}
+          style={styles.mainInput}
           value={password}
           onChangeText={setPassword}
           placeholder='Digite sua senha'
@@ -52,7 +52,7 @@ export default function SignUp() {
         />
 
         <TouchableOpacity style={styles.buttonSignUp} onPress={handleSignUp}>
-          <Image style={styles.buttonImage} source={require('../../../assets/imgs/Fundo-GyMate-90º.png')} />
+          <Image style={styles.buttonSignUpImage} source={require('../../../assets/imgs/Fundo-GyMate-90º.png')} />
           <Text style={styles.buttonSignUpText}>Criar conta</Text>
         </TouchableOpacity>
 

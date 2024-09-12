@@ -8,19 +8,19 @@ import { app } from '../../../components/confg';
 export default function SignIn() {
     const navigation = useNavigation();
 
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
 
     const handleSignIn = async () => {
-        const auth = getAuth(app);
+        const auth = getAuth(app)
         try {
-            await signInWithEmailAndPassword(auth, email, password);
-            console.log('User signed in successfully!');
-            navigation.navigate('GyMate Main');
+            await signInWithEmailAndPassword(auth, email, password)
+            console.log('User signed in successfully!')
+            navigation.navigate('GyMate Main')
         } catch (error) {
-            console.error('Authentication error:', error.message);
+            console.error('Authentication error:', error.message)
         }
-    };
+    }
 
     return (
         <SafeAreaView style={styles.container}>
@@ -35,7 +35,7 @@ export default function SignIn() {
 
             <View style={styles.main}>
                 <TextInput
-                    style={styles.input}
+                    style={styles.mainInput}
                     value={email}
                     onChangeText={setEmail}
                     placeholder='Digite seu e-mail'
@@ -43,7 +43,7 @@ export default function SignIn() {
                     keyboardType='email-address'
                 />
                 <TextInput
-                    style={styles.input}
+                    style={styles.mainInput}
                     value={password}
                     onChangeText={setPassword}
                     placeholder='Digite sua senha'
@@ -56,7 +56,7 @@ export default function SignIn() {
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.buttonSignIn} onPress={handleSignIn}>
-                    <Image style={styles.buttonImage} source={require('../../../assets/imgs/Fundo-GyMate-90º.png')} />
+                    <Image style={styles.buttonSignInImage} source={require('../../../assets/imgs/Fundo-GyMate-90º.png')} />
                     <Text style={styles.buttonSignInText}>Entrar na conta</Text>
                 </TouchableOpacity>
 
@@ -66,7 +66,7 @@ export default function SignIn() {
             </View>
 
             <View style={styles.nav}>
-                <Text style={styles.navText}>Ainda não possui uma conta?</Text>
+                <Text style={styles.navText}>Não possui uma conta?</Text>
                 <TouchableOpacity style={styles.navButtonSignUp} onPress={() => navigation.navigate('GyMate Sign-up')}>
                     <Text style={styles.navButtonSignUpText}>Clique aqui!</Text>
                 </TouchableOpacity>

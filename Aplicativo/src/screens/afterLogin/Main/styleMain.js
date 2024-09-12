@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     header: {
         width: '90%',
         height: '10%',
-        marginTop: '10%',
+        marginTop: height*0.05,
         alignItems: 'center',
         justifyContent: 'space-between',
         display: 'flex',
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
 
-    notificationImage: {
+    buttonNotificationImage: {
         width: '100%',
         height: '100%',
         borderRadius: 25,
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     },
 
     navText: {
-        fontSize: 20,
+        fontSize: 16,
         fontFamily: 'Lexend Bold',
         color: '#fff',
         textAlign: 'center',
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     navButtonBotImage: {
         width: '80%',
         height: '80%',
-        position: 'absolute',
+        resizeMode: 'contain',
     },
 
     divRotine: {

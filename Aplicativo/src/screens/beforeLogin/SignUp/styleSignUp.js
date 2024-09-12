@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  input: {
+  mainInput: {
     width: '90%',
     height: 60,
     margin: 5,
@@ -79,9 +79,10 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontFamily: 'Lexend Bold',
     color: '#fff',
+    textAlign: 'center',
   },
 
-  buttonImage: {
+  buttonSignUpImage: {
     width: '100%',
     height: '100%',
     borderRadius: 18,
@@ -115,6 +116,7 @@ const styles = StyleSheet.create({
   navText: {
     fontSize: 25,
     color: '#fff',
+    textAlign: 'center',
   },
 
   navButtonSignIn: {

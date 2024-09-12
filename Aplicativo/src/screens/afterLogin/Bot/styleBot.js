@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   header: {
     width: '90%',
     height: '10%',
-    marginTop: '10%',
+    marginTop: height*0.05,
     alignItems: 'center',
     justifyContent: 'space-between',
     display: 'flex',
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  notificationImage: {
+  buttonNotificationImage: {
     width: '100%',
     height: '100%',
     borderRadius: 25,
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   },
 
   botText: {
-    fontSize: 20,
+    fontSize: 16,
     fontFamily: 'Lexend Bold',
     color: '#fff',
     textAlign: 'center',
@@ -78,12 +78,17 @@ const styles = StyleSheet.create({
   divRotine: {
     width: '90%',
     height: '60%',
+    paddingHorizontal: '5%',
     borderWidth: 2,
     borderRadius: 20,
     borderColor: '#1179e2',
-    alignItems: 'center',
-    justifyContent: 'center',
     backgroundColor: '#fff',
+  },
+
+  rotineText: {
+    fontSize: 16,
+    fontFamily: 'Lexend Regular',
+    color: '#1179e2',
   },
 
   divGemini: {
@@ -95,7 +100,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
 
-  GeminiInput: {
+  geminiInput: {
     width: '80%',
     height: 60,
     paddingLeft: '5%',
@@ -109,7 +114,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
 
-  GeminiButton: {
+  geminiButton: {
     width: '20%',
     height: 60,
     borderTopRightRadius: 20,
@@ -119,11 +124,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#1179e2',
   },
 
-  GeminiButtonText: {
-    fontSize: 20,
-    fontFamily: 'Lexend Bold',
-    color: '#fff',
-    textAlign: 'center',
+  geminiButtonImage: {
+    width: '80%',
+    height: '80%',
+    resizeMode: 'contain',
   },
 
   footer: {

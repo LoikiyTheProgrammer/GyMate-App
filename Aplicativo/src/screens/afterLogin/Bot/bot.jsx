@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './styleBot';
-import { SafeAreaView, View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
+import { SafeAreaView, View, ScrollView, Text, TextInput, TouchableOpacity, Image } from 'react-native';
+import { run } from '../../../components/gemini';
 import { useNavigation } from '@react-navigation/native';
 
 export default function Bot() {
     const navigation = useNavigation();
+
+    const [answer, setAnswer] = useState('')
+    const [question, setQuestion] = useState('')
+    const [responseText, setResponseText] = useState('')
+
+    const handleSend = async () => {
+        try {
+            const result = await run(question)
+            setResponseText(result)
+        } catch (error) {
+            console.error('Error fetching response:', error)
+        }
+    }
 
     return (
         <SafeAreaView style={styles.container}>
@@ -13,7 +27,7 @@ export default function Bot() {
             <View style={styles.header}>
                 <Text style={styles.headerTitle}>GyMate</Text>
                 <TouchableOpacity style={styles.buttonNotification}>
-                    <Image style={styles.notificationImage} source={require('../../../assets/imgs/Bell-Icon.png')} />
+                    <Image style={styles.buttonNotificationImage} source={require('../../../assets/imgs/Bell-Icon.png')} />
                 </TouchableOpacity>
             </View>
 
@@ -25,18 +39,22 @@ export default function Bot() {
                 </View>
 
                 <View style={styles.divRotine}>
-
+                    <ScrollView>
+                        <Text style={styles.rotineText}>{responseText}</Text>
+                    </ScrollView>
                 </View>
 
                 <View style={styles.divGemini}>
                     <TextInput
-                        style={styles.GeminiInput}
+                        style={styles.geminiInput}
+                        value={question}
+                        onChangeText={setQuestion}
                         placeholder='Digite aqui'
                         placeholderTextColor={'#1179e2'}
                     />
 
-                    <TouchableOpacity style={styles.GeminiButton}>
-                        <Text style={styles.GeminiButtonText}>Enviar</Text>
+                    <TouchableOpacity style={styles.geminiButton} onPress={handleSend}>
+                        <Image style={styles.geminiButtonImage} source={require('../../../assets/imgs/AI-Icon.png')} />
                     </TouchableOpacity>
                 </View>
             </View>

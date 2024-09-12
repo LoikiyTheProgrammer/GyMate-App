@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     header: {
         width: '90%',
         height: '10%',
-        marginTop: '10%',
+        marginTop: height*0.05,
         alignItems: 'center',
         justifyContent: 'space-between',
         display: 'flex',
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
 
-    notificationImage: {
+    buttonNotificationImage: {
         width: '100%',
         height: '100%',
         borderRadius: 25,
@@ -68,16 +68,23 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
     },
 
+    profile: {
+        width: '100%',
+        height: 'auto',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+
     profileImage: {
         width: 200,
         height: 200,
     },
 
-    emailText: {
-        textAlign: 'center',
+    profileText: {
         fontSize: 20,
         fontFamily: 'Lexend Bold',
         color: '#000',
+        textAlign: 'center',
     },
 
     buttonLogout: {
@@ -95,6 +102,7 @@ const styles = StyleSheet.create({
         fontSize: 25,
         fontFamily: 'Lexend Bold',
         color: '#fff',
+        textAlign: 'center',
     },
 
     footer: {

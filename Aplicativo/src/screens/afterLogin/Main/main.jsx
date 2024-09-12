@@ -13,7 +13,7 @@ export default function Main() {
             <View style={styles.header}>
                 <Text style={styles.headerTitle}>GyMate</Text>
                 <TouchableOpacity style={styles.buttonNotification}>
-                    <Image style={styles.notificationImage} source={require('../../../assets/imgs/Bell-Icon.png')} />
+                    <Image style={styles.buttonNotificationImage} source={require('../../../assets/imgs/Bell-Icon.png')} />
                 </TouchableOpacity>
             </View>
 
