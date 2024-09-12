@@ -20,7 +20,7 @@ export default function Home() {
             </View>
 
             <View style={styles.welcome}>
-                <Text style={styles.welcomeText}>Bem vindo</Text>
+                <Text style={styles.welcomeText}>Bora treinar?</Text>
             </View>
 
             <View style={styles.nav}>

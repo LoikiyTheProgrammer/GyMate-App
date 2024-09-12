@@ -93,16 +93,18 @@ const styles = StyleSheet.create({
     width: '45%',
     height: 60,
     margin: 5,
+    borderWidth: 2,
     borderRadius: 20,
+    borderColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#1179e2',
   },
 
   buttonBackText: {
     fontSize: 25,
     fontFamily: 'Lexend Bold',
-    color: '#1179e2',
+    color: '#fff',
     textAlign: 'center',
   },
 
